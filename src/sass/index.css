@@ -36,14 +36,40 @@ img {
   display: block;
 }
 
+/*
 .container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
+}*/
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -68,7 +94,7 @@ header {
   margin-top: 100px;
 }
 
-.about-section {
+.about {
   background-color: #84a178;
   padding-top: 60px;
   padding-bottom: 42px;
@@ -78,7 +104,7 @@ header {
   display: none;
 }
 
-.about-section__label {
+.about__label {
   font-family: "Montserrat";
   font-style: normal;
   margin: 0;
@@ -91,7 +117,7 @@ header {
   text-transform: uppercase;
 }
 
-.about-section__title_h2 {
+.about__title_h2 {
   font-family: "Seymour One";
   font-style: normal;
   font-weight: 400;
@@ -104,7 +130,7 @@ header {
   padding-bottom: 32px;
 }
 
-.about-section__circles {
+.about__circles {
   position: relative;
   width: 278px;
   height: 278px;
@@ -114,7 +140,7 @@ header {
   border-radius: 50%;
   margin: 0px auto;
 }
-.about-section__circles img {
+.about__circles img {
   position: absolute;
   border-color: transparent;
   width: 100%;
@@ -123,9 +149,6 @@ header {
 }
 
 .about__text {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 176%;
   /* or 21px */
@@ -143,6 +166,9 @@ header {
 }
 
 .about__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 164px;
   height: 42px;
@@ -151,9 +177,10 @@ header {
   background-color: #f8d24e;
   color: #131313;
   cursor: pointer;
+  /*
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
   margin: 0px auto;
   font-size: 14px;
   font-weight: 600;
@@ -173,12 +200,14 @@ header {
   height: 10px;
 }
 
+.about__info {
+  padding-bottom: 40px;
+}
+
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-  .about-section__info {
+  .about__info {
     display: flex;
+    padding-bottom: 48px;
   }
   .about__text {
     text-align: left;
@@ -188,25 +217,25 @@ header {
   .about__text p {
     padding-bottom: 8px;
   }
-  .about-section__circles {
+  .about__circles {
     width: 334px;
     height: 330px;
   }
-  .about-section__circles img {
+  .about__circles img {
     width: 334px;
     height: 330px;
     top: 25px;
   }
-  .about-section__description {
+  .about__description {
     width: 336px;
   }
   .about__button {
     margin: 0;
   }
-  .about-section__title_h2 {
+  .about__title_h2 {
     font-size: 34px;
   }
-  .about-section__label {
+  .about__label {
     font-size: 22px;
   }
   .about-last {
@@ -214,25 +243,20 @@ header {
   }
 }
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .about-section__info {
+  .about__info {
     display: flex;
+    padding-bottom: 60px;
   }
-  .about-section__circles {
+  .about__circles {
     width: 490px;
     height: 490px;
   }
-  .about-section__circles img {
+  .about__circles img {
     width: 490px;
     height: 490px;
     top: 39px;
   }
-  .about-section__description {
+  .about__description {
     width: 463px;
   }
   .about__text {
