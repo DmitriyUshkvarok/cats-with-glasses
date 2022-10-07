@@ -64,7 +64,7 @@ body {
 }
 
 .gallery {
-  background-image: linear-gradient(to bottom, #84a178 15%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 100%);
+  background-image: linear-gradient(to bottom, #84a178 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
 }
 
 .swiper-slide {
@@ -78,9 +78,19 @@ body {
 }
 
 .gallery-slide img {
-  border-radius: 24px;
+  border-radius: 8px;
 }
 
+@media (min-width: 768px) {
+  .gallery {
+    background-image: linear-gradient(to bottom, #84a178 165px, rgba(0, 0, 0, 0) 165px, rgba(0, 0, 0, 0) 100%);
+  }
+}
+@media (min-width: 1200px) {
+  .gallery {
+    background-image: linear-gradient(to bottom, #84a178 95px, rgba(0, 0, 0, 0) 95px, rgba(0, 0, 0, 0) 100%);
+  }
+}
 .modal-title {
   font-family: "Seymour One";
   font-size: 16px;
