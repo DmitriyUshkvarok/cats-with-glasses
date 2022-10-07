@@ -68,6 +68,113 @@ header {
   margin-top: 100px;
 }
 
+.about-section {
+  background-color: #84a178;
+  padding-top: 60px;
+  padding-bottom: 42px;
+}
+
+.about-section__title_h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #fcfcfc;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-section__title_h2 {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  padding-bottom: 32px;
+}
+
+.about-section__circles {
+  position: relative;
+  width: 278px;
+  height: 278px;
+  background-color: #f8d24e;
+  background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  border-radius: 50%;
+  margin: 0px auto;
+}
+.about-section__circles img {
+  position: absolute;
+  border-color: transparent;
+  width: 100%;
+  border-radius: 50%;
+  top: 21.82px;
+}
+
+.about__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 176%;
+  /* or 21px */
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #fcfcfc;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  text-indent: 1px;
+}
+
+.about__button {
+  position: relative;
+  width: 164px;
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f8d24e;
+  color: #131313;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px auto;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
+
+.about__button::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 80%;
+  background-image: url("../images/strelka.png");
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .about-section__info {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .modal-title {
   font-family: "Seymour One";
   font-size: 16px;
