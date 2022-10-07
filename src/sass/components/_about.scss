@@ -6,28 +6,18 @@
 .about-last{
   display: none;
 }
-.about__label{
-  font-family: 'Montserrat';
-  font-style: normal;
+.page-sup-title{
   margin: 0;
   margin-bottom: 12px;
-  font-weight: 700;
   font-size: 18px;
-  line-height: 1.2;
-  color: $MainbackgroundColor;
   text-align: center;
-  text-transform: uppercase;
+
+  
 }
-.about__title_h2 {
-  font-family: 'Seymour One';
-  font-style: normal;
-  font-weight: 400;
+.page-title {
   font-size: 30px;
-  line-height: 1.26;
   text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: $MainbackgroundColor;
+
   padding-bottom: 32px;
 }
 .about__circles {
@@ -82,10 +72,6 @@
   background-color: $secondBlockColor;
   color: $firstColor;
   cursor: pointer;
-  /*
-  display: flex;
-  align-items: center;
-  justify-content: center;*/
   margin: 0px auto;
   font-size: 14px;
   font-weight: 600;
@@ -140,10 +126,10 @@
 .about__button{
   margin: 0;
 }
-.about__title_h2 {
+.page-title {
   font-size: 34px;
 }
-.about__label 
+.page-sup-title
 {
   font-size: 22px;
 }
@@ -154,7 +140,9 @@
 
 
 @media screen and (min-width: 1200px){
- 
+  .page-title {
+    font-size: 36px;
+  }
   .about__info {
     display: flex;
     padding-bottom: 60px;

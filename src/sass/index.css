@@ -104,29 +104,16 @@ header {
   display: none;
 }
 
-.about__label {
-  font-family: "Montserrat";
-  font-style: normal;
+.page-sup-title {
   margin: 0;
   margin-bottom: 12px;
-  font-weight: 700;
   font-size: 18px;
-  line-height: 1.2;
-  color: #fcfcfc;
   text-align: center;
-  text-transform: uppercase;
 }
 
-.about__title_h2 {
-  font-family: "Seymour One";
-  font-style: normal;
-  font-weight: 400;
+.page-title {
   font-size: 30px;
-  line-height: 1.26;
   text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #fcfcfc;
   padding-bottom: 32px;
 }
 
@@ -177,10 +164,6 @@ header {
   background-color: #f8d24e;
   color: #131313;
   cursor: pointer;
-  /*
-  display: flex;
-  align-items: center;
-  justify-content: center;*/
   margin: 0px auto;
   font-size: 14px;
   font-weight: 600;
@@ -232,10 +215,10 @@ header {
   .about__button {
     margin: 0;
   }
-  .about__title_h2 {
+  .page-title {
     font-size: 34px;
   }
-  .about__label {
+  .page-sup-title {
     font-size: 22px;
   }
   .about-last {
@@ -243,6 +226,9 @@ header {
   }
 }
 @media screen and (min-width: 1200px) {
+  .page-title {
+    font-size: 36px;
+  }
   .about__info {
     display: flex;
     padding-bottom: 60px;
@@ -277,7 +263,7 @@ header {
   font-size: 22px;
   line-height: 1.23;
   text-transform: uppercase;
-  color: #131313;
+  color: #fcfcfc;
 }
 
 .page-title {
@@ -286,5 +272,5 @@ header {
   line-height: 1.26;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #131313;
+  color: #fcfcfc;
 }/*# sourceMappingURL=index.css.map */
