@@ -74,7 +74,11 @@ header {
   padding-bottom: 42px;
 }
 
-.about-section__title_h3 {
+.about-last {
+  display: none;
+}
+
+.about-section__label {
   font-family: "Montserrat";
   font-style: normal;
   margin: 0;
@@ -134,6 +138,9 @@ header {
   padding-bottom: 20px;
   text-indent: 1px;
 }
+.about__text p {
+  padding-bottom: 3px;
+}
 
 .about__button {
   position: relative;
@@ -172,7 +179,65 @@ header {
   }
   .about-section__info {
     display: flex;
-    flex-wrap: wrap;
+  }
+  .about__text {
+    text-align: left;
+    padding: 0;
+    padding-bottom: 48px;
+  }
+  .about__text p {
+    padding-bottom: 8px;
+  }
+  .about-section__circles {
+    width: 334px;
+    height: 330px;
+  }
+  .about-section__circles img {
+    width: 334px;
+    height: 330px;
+    top: 25px;
+  }
+  .about-section__description {
+    width: 336px;
+  }
+  .about__button {
+    margin: 0;
+  }
+  .about-section__title_h2 {
+    font-size: 34px;
+  }
+  .about-section__label {
+    font-size: 22px;
+  }
+  .about-last {
+    display: contents;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .about-section__info {
+    display: flex;
+  }
+  .about-section__circles {
+    width: 490px;
+    height: 490px;
+  }
+  .about-section__circles img {
+    width: 490px;
+    height: 490px;
+    top: 39px;
+  }
+  .about-section__description {
+    width: 463px;
+  }
+  .about__text {
+    font-size: 16px;
+    padding-top: 70px;
   }
 }
 .modal-title {
