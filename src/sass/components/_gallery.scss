@@ -1,5 +1,22 @@
+.gallery {
+  background-image: linear-gradient(
+    to bottom,
+    $firstBlockColor 15%,
+    rgba(0, 0, 0, 0) 15%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.swiper-wrapper {
+  overflow: hidden;
+}
+
+.gallery-slide img {
+  border-radius: 24px;
 }
