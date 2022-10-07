@@ -1,2 +1,43 @@
-@import './common';
-@import './example';
+// visually hidden
+@import './utils/visually-hidden';
+// mixins
+@import './utils/mixins';
+// variebles
+@import './utils/variebles';
+// normolize
+@import './base/common';
+// global styles
+@import './utils/global-styles';
+// hero - header
+@import './components/hero-header';
+// products
+@import './components/products';
+// about
+@import './components/about';
+// advantages
+@import './components/advantages';
+// gallery
+@import './components/gallery';
+// customer-reviews
+@import './components/customer-review';
+// contacts
+@import './components/contacts';
+// footer
+@import './components/footer';
+// by now modal
+@import './components/by-now-modal';
+// ice cream modal
+@import './components/ice-cream-modal';
+// about modal
+@import './components/about-modal';
+// locations modal
+@import './components/locations-modal';
+// franchise
+@import './components/franchise-modal';
+// modal title
+@import './components/modal-title';
+// title site
+@import './components/title-site';
+
+
+
