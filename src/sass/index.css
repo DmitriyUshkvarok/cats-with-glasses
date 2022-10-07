@@ -52,6 +52,8 @@ body {
   width: 100%;
   background-image: url("../images/ice-cream-fon 2.png");
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
   margin: 0;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
@@ -61,11 +63,34 @@ body {
   line-height: 1.86;
 }
 
-header {
-  width: 100%;
-  height: 800px;
+.gallery {
+  background-image: linear-gradient(to bottom, #84a178 25px, rgba(0, 0, 0, 0) 25px, rgba(0, 0, 0, 0) 100%);
 }
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper {
+  overflow: hidden;
+}
+
+.gallery-slide img {
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    background-image: linear-gradient(to bottom, #84a178 165px, rgba(0, 0, 0, 0) 165px, rgba(0, 0, 0, 0) 100%);
+  }
+}
+@media (min-width: 1200px) {
+  .gallery {
+    background-image: linear-gradient(to bottom, #84a178 95px, rgba(0, 0, 0, 0) 95px, rgba(0, 0, 0, 0) 100%);
+  }
+}
 .modal-title {
   font-family: "Seymour One";
   font-size: 16px;
