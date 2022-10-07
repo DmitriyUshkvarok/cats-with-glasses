@@ -50,12 +50,20 @@ html {
 
 body {
   width: 100%;
+  background-image: url("../images/ice-cream-fon 2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: #131313;
   background-color: #fcfcfc;
   font-size: 12px;
   line-height: 1.86;
+}
+
+header {
+  width: 100%;
+  height: 800px;
 }
 
 .modal-title {
