@@ -70,26 +70,30 @@ header {
   text-align: center;
 }
 
+.feedback__image {
+  margin: auto;
+}
+
 .feedback__wrapper {
   background: #84A178;
   border-radius: 10px;
   padding: 34px 39px;
+  margin-top: 32px;
 }
 
 .feedback__text {
-  font-family: "Montserrat";
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 2.55;
   color: #fcfcfc;
+  letter-spacing: 0.04em;
 }
 
-.swipper {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #D9D9D9;
+.feedback__residence {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+  margin-top: 30px;
 }
 
 .modal-title {
