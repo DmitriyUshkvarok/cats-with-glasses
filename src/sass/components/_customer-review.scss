@@ -1,0 +1,21 @@
+.feedback__wrapper {
+    background: $firstBlockColor;
+    border-radius: 10px;
+    padding: 39px 74px;
+    text-align: center;
+}
+.feedback__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: $MainbackgroundColor;
+}
+.swipper {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+}
