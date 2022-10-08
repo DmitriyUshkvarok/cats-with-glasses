@@ -273,6 +273,23 @@ body {
     background-image: linear-gradient(to bottom, #84a178 95px, rgba(0, 0, 0, 0) 95px, rgba(0, 0, 0, 0) 100%);
   }
 }
+.feedback {
+  padding-top: 80px;
+  padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .feedback {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feedback {
+    padding-top: 128px;
+    padding-bottom: 100px;
+  }
+}
+
 .feedback__block {
   text-align: center;
   margin: auto;
