@@ -1,9 +1,10 @@
 .modal-button {
     display: inline-block;
     font-weight: 600;
-    @include font (15px, 12px);
+    @include font (12px, 15px);
     color: $firstColor;
     background-color: $secondBlockColor;
+    border: 0;
     border-radius: 10px;
     padding: 12px 34px;
     margin-top: 24px;
@@ -30,16 +31,23 @@
     padding: 0;
     width: 16px;
     height: 16px;
+    
+    &:hover .close-icon, &:focus .close-icon {
+        fill: $secondBlockColor;
+    }
 }
 
 .close-icon {
     width: 16px;
     height: 16px;
+    fill: $firstColor;
+    transition: fill $animationTransition;
 }
 
 @media screen and (min-width: 768px) {
     .modal-button {
         margin-top: 32px;
+        @include font (14px, 17px);
     }
 
     .modal-close-btn {
