@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-@mixin font ($fs, $lh) {
+@mixin font($fs, $lh) {
   font-size: $fs;
-  line-height: $lh / $fs;
+  line-height: ($lh / $fs);
 }
