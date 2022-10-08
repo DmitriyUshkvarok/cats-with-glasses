@@ -1,0 +1,168 @@
+.about {
+  background-color: $firstBlockColor;
+  padding-top: 60px;
+  padding-bottom: 42px;
+}
+.about-last{
+  display: none;
+}
+.page-sup-title{
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 18px;
+  text-align: center;
+
+  
+}
+.page-title {
+  font-size: 30px;
+  text-align: center;
+
+  padding-bottom: 32px;
+}
+.about__circles {
+  position: relative;
+  width: 278px;
+  height: 278px;
+  background-color: $secondBlockColor;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  border-radius: 50%;
+  margin: 0px auto;
+
+  & img {
+    position: absolute;
+    border-color: transparent;
+    width: 100%;
+    border-radius: 50%;
+    top: 21.82px;
+  }
+}
+.about__text {
+ 
+  font-size: 12px;
+  line-height: 176%;
+  /* or 21px */
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $MainbackgroundColor;
+  padding-top: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+  text-indent: 1px;
+  & p{
+    padding-bottom: 3px;
+  }
+}
+
+.about__button {
+  @include flexCentral;
+  position: relative;
+  width: 164px;
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  background-color: $secondBlockColor;
+  color: $firstColor;
+  cursor: pointer;
+  margin: 0px auto;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Montserrat';
+}
+
+.about__button::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 80%;
+  background-image: url('../images/strelka.png');
+  background-repeat: no-repeat;
+  width: 8px;
+  height: 10px;
+}
+.about__info {
+  padding-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+ 
+  .about__info {
+    display: flex;
+    padding-bottom: 48px;
+    
+  }
+  .about__text{
+    text-align: left;
+    padding:0;
+    padding-bottom: 48px;
+    & p{
+      padding-bottom: 8px;
+    }
+  }
+  .about__circles {
+    
+    width: 334px;
+    height: 330px;
+    
+    & img {
+      width: 334px;
+    height: 330px;
+    top: 25px;
+    }
+  }
+.about__description{
+  width: 336px;
+}
+.about__button{
+  margin: 0;
+}
+.page-title {
+  font-size: 34px;
+}
+.page-sup-title
+{
+  font-size: 22px;
+}
+.about-last{
+  display: contents;
+}
+}
+
+
+@media screen and (min-width: 1200px){
+  .page-title {
+    font-size: 36px;
+  }
+  .about__info {
+    display: flex;
+    padding-bottom: 60px;
+  }
+  .about__circles {
+
+    width: 490px;
+    height: 490px;
+    & img {
+      width: 490px;
+    height: 490px;
+    top: 39px;
+    }
+  }
+  .about__description{
+    width: 463px;
+  }
+  .about__text{
+    font-size: 16px;
+    padding-top: 70px;
+  }
+  
+}
