@@ -19,16 +19,14 @@
     }
 
     @media screen and (min-width:1200px) {
-        margin-left: 100px;
-        margin-right: 100px;
+        // margin-left: 100px;
+        // margin-right: 100px;
     }
 }
-
 .feedback__image {
     margin: auto;
     border-radius: 50%;
 }
-
 .feedback__wrapper {
     background: $firstBlockColor;
     border-radius: 10px;
@@ -47,7 +45,6 @@
         width: 968px;
     }
 }
-
 .feedback__text {
     font-weight: 400;
     font-size: 12px;
@@ -67,14 +64,42 @@
     }
 
 }
-
 .feedback__residence {
+    position: relative;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.86;
     margin-top: 30px;
-
     @media screen and (min-width:768px) {
         margin-top: 32px;
     }
 }
+.swiper-slide {
+    display: block;
+}
+.swiper-slide .swiper-pagination {
+    bottom: 0;
+}
+.swiper-slide .swiper-pagination-bullets {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 20px;
+    background-color: $firstBlockColor;
+}
+
+
+.swiper-pagination {
+    position: absolute;
+    bottom: -0;
+}
+
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $firstBlockColor;
+}
+
