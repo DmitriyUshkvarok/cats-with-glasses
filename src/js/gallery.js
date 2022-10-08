@@ -1,7 +1,5 @@
 var swiper = new Swiper('.gallery-swip', {
-  // slidesPerView: 1,
-  // slidesPerGroup: 1,
-  effect: 'flip',
+  effect: 'fade',
   grabCursor: true,
   autoplay: {
     delay: 3500,
