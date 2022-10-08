@@ -51,74 +51,78 @@ header {
     display: flex;
     gap: 8px;
     margin-bottom: 30px;
+
+    position: relative;
+    z-index: 5;
   }
 
   &__button--link {
     font-size: 8px;
     line-height: 1.25;
     @include flexCentral;
+    transition: color $animationTransition;
   }
 
   &__button--products {
-    width: 62px;
-    height: 24px;
-    background-color: transparent;
-    border: 2px solid $secondBlockColor;
-    border-radius: 8px;
-    font-weight: 600;
-
-    &:hover,
-    &:focus {
-      border-color: $hoverBtn;
-    }
-
-    &:disabled {
-      border-color: $colorTime;
-    }
+    
   }
 
   &__button--about {
-    width: 83px;
-    height: 24px;
-    background-color: transparent;
-    border: 0;
+    
   }
 }
 
-.hero__button--list {
-  position: relative;
-  z-index: 5;
-}
 
 .hero__button--products {
   transition: $animationTransition;
 }
 
 .products-link {
-  color: #131313;
-  &:focus {
+    width: 62px;
+    height: 24px;
+    background-color: transparent;
+    border: 2px solid $secondBlockColor;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #131313;
+    transition: border $animationTransition;
+
+    &:hover{
+      border-color: $hoverBtn;
+    }
+
+    &:disabled {
+      border-color: $colorTime;
+    }
+  
+    &:focus { border-color: $hoverBtn;
     color: $MainbackgroundColor;
   }
 }
 
 .about-link {
-  color: $secondBlockColor;
-  text-decoration: underline;
+    width: 83px;
+    height: 24px;
+    background-color: transparent;
+    border: 0;
+    color: $secondBlockColor;
+    text-decoration: underline;
+    transition: color $animationTransition;
 
-  &:hover {
+    &:hover {
     color: $hoverBtn;
   }
 
-  &:focus {
+    &:focus {
     color: $MainbackgroundColor;
   }
 
-  &:disabled {
+    &:disabled {
     color: $colorTime;
   }
 }
 
-.test-ice-cream {
+.ice-cream {
   position: absolute;
   bottom: 0;
   left: 0;

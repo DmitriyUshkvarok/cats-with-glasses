@@ -26,15 +26,19 @@
             passion</h1>
 
         <ul class="hero__button--list">
-            <li><button class="hero__button--products" type="button">
-                    <a class="hero__button--link products-link"
-                        href="#products">Products</a>
-                </button></li>
-            <li> <button class="hero__button--about" type="button">
-                    <a class="hero__button--link about-link" href="#about">How
-                        it&#8216s made?</a>
-                </button></li>
+            <li>
+                <a class="hero__button--link products-link" href="#products">Products</a>
+                </li>
+            <li>
+                <a class="hero__button--link about-link" href="#about">Howit&#8216s made?</a>
+            </li>
         </ul>
     </div>
-    <img class="test-ice-cream" src="./images/ice-cream-fon.png" alt="">
+    <picture>
+        <source srcset="./images/ice-cream-mobile.png 1x,
+                        ./images/ice-cream-mobile@2x.png 2x" type="image/png"
+                        media="(max-width:767px)">
+        <img class="ice-cream" src="./images/ice-cream-mobile.png" alt="">
+    </picture>
+    
 </section>
