@@ -66,20 +66,22 @@ header {
   height: 800px;
 }
 
+.feedback__block {
+  text-align: center;
+}
+
 .feedback__wrapper {
   background: #84A178;
   border-radius: 10px;
-  padding: 39px 74px;
-  text-align: center;
+  padding: 34px 39px;
 }
 
 .feedback__text {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 186%;
-  letter-spacing: 0.04em;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2.55;
   color: #fcfcfc;
 }
 
