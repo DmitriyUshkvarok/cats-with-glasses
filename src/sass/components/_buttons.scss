@@ -1,5 +1,24 @@
+.modal-button {
+    display: inline-block;
+    font-weight: 600;
+    @include font (15px, 12px);
+    color: $firstColor;
+    background-color: $secondBlockColor;
+    border-radius: 10px;
+    padding: 12px 34px;
+    margin-top: 24px;
+    transition: color $animationTransition, background-color $animationTransition;
 
-
+    &:hover, &:focus {
+        background-color: $hoverBtn;
+    }
+    &:focus {
+        color: $MainbackgroundColor;
+    }
+    &:disabled {
+        background-color: $colorTime;
+    }
+}
 
 .modal-close-btn {
     position: absolute;
@@ -19,6 +38,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .modal-button {
+        margin-top: 32px;
+    }
+
     .modal-close-btn {
         top: 20px;
         right: 20px;

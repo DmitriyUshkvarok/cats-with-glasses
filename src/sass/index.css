@@ -101,6 +101,7 @@ body {
 
 .modal__address {
   padding: 28px 30px;
+  text-align: center;
 }
 
 .location-map {
@@ -153,6 +154,28 @@ body {
   color: #131313;
 }
 
+.modal-button {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 0.8;
+  color: #131313;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  padding: 12px 34px;
+  margin-top: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-button:hover, .modal-button:focus {
+  background-color: #0a8817;
+}
+.modal-button:focus {
+  color: #fcfcfc;
+}
+.modal-button:disabled {
+  background-color: #ababab;
+}
+
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -171,6 +194,9 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .modal-button {
+    margin-top: 32px;
+  }
   .modal-close-btn {
     top: 20px;
     right: 20px;
