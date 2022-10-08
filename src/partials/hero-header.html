@@ -3,8 +3,11 @@
         <nav class="site-nav">
             <a class="logo" href="#">
                 <picture>
+                    <source srcset="./images/logo-tablet.png 1x, 
+                    ./images/logo-tablet@2x.png 2x" 
+                     media="(min-width:768px)">
                     <source srcset="./images/logo-mobile.png 1x,
-                        ./images/logo-mobile@2x.png 2x" type="image/png"
+                        ./images/logo-mobile@2x.png 2x"
                         media="(max-width:767px)">
                     <img src="./images/logo-mobile.png" alt="Logo">
                 </picture>
@@ -15,13 +18,14 @@
                 <use href="./images/sprite.svg#mobile-menu-open"></use>
             </svg>
         </button>
+        <button class="header-btn" type="button">Buy now</button>
     </div>
 </header>
 
 <section class="hero">
-    <div class="container">
+    <div class="container hero__container">
 
-        <h1 class="hero__title">ice cream <br>
+        <h1 class="hero__title ">ice cream <br>
             made with <br>
             passion</h1>
 
@@ -35,9 +39,11 @@
         </ul>
     </div>
     <picture>
-            <source>
+            <source srcset="./images/ice-cream-tablet@2x.png "
+            media="(min-width:768px)">
             <img class="ice-cream" src="./images/ice-cream-mobile@2x.png" alt="">         
     </picture>
-    
+    <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+    <button class="hero__arrow" type="button"><img src="./images/arrow-white.png" alt=""></button>
     
 </section>
