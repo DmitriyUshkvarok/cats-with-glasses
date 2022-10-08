@@ -91,11 +91,11 @@ body {
 
   transition: visibility $animationTransition, opacity $animationTransition;
 
-  // &.is-hidden {
-  //   visibility: hidden;
-  //   opacity: 0;
-  //   pointer-events: none;
-  // }
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 .modal {
