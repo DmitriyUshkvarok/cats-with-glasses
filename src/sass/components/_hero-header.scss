@@ -1,1 +1,129 @@
 
+header {
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+
+    z-index: 15;
+}
+  
+.header__container {
+    justify-content: space-between;
+    display: flex;
+}
+  
+.logo {
+    margin-top: 12px;
+    display: block;
+}
+
+.mobile-menu-btn-open {
+    height: 32px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin-top: 16px;
+}
+  
+.mobile-menu-open-icon {
+    fill: #fff;
+    width: 32px;
+    height: 32px;
+}
+  
+
+.hero { position: relative;
+
+    padding-top: 20px;
+    background-color: $firstBlockColor;
+    min-height: 510px;
+    
+    &__title {
+        letter-spacing: .04em;
+        text-transform: uppercase;
+        color: $MainbackgroundColor;
+        margin-bottom: 32px;
+        padding-top: 110px;
+        font-family: Seymour One;
+        font-size: 26px;
+        line-height: 1.26;
+        
+    }
+
+    &__button--list {
+        display: flex;
+        gap: 8px;
+
+        margin-bottom: 30px;
+    }
+
+    &__button--link{
+        font-size: 8px;
+        line-height: 1.25;
+        
+        @include flexCentral
+    }
+
+    &__button--products {
+        width: 62px;
+        height: 24px;
+        background-color: transparent;
+        border: 2px solid $secondBlockColor;
+        border-radius: 8px;
+        font-weight: 600;
+
+        &:hover , &:focus {
+            border-color: $hoverBtn;
+        }
+       
+        &:disabled {
+            border-color: $colorTime;
+        }
+    }
+
+    &__button--about {
+        width: 83px;
+        height: 24px;
+        background-color: transparent;
+        border: 0;  
+    }
+
+ }
+
+
+
+  .products-link {
+    color: #131313;
+    &:focus {
+        color: $MainbackgroundColor;
+    }
+  }
+  .about-link {
+    color: $secondBlockColor;
+    text-decoration: underline;
+
+    &:hover {
+        color: $hoverBtn;
+    }
+
+    &:focus {
+        color: $MainbackgroundColor;
+    }
+
+    &:disabled {
+        color: $colorTime;
+    }
+  }
+
+//   Позиционирование изображений
+
+  .ice-cream {
+    position: absolute;
+    left:0;
+    bottom: -53px;
+    
+  }
+  
+  
+  
