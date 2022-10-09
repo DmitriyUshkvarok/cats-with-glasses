@@ -273,26 +273,33 @@ body {
     background-image: linear-gradient(to bottom, #84a178 95px, rgba(0, 0, 0, 0) 95px, rgba(0, 0, 0, 0) 100%);
   }
 }
+.customer-reviews {
+  position: relative;
+}
+
 .feedback {
   padding-top: 80px;
-  padding-bottom: 48px;
+  padding-bottom: 74px;
+  display: flex;
+  flex-direction: row;
 }
 @media screen and (min-width: 768px) {
   .feedback {
     padding-top: 60px;
-    padding-bottom: 80px;
+    padding-bottom: 124px;
   }
 }
 @media screen and (min-width: 1200px) {
   .feedback {
     padding-top: 128px;
-    padding-bottom: 100px;
+    padding-bottom: 144px;
   }
 }
 
 .feedback__block {
   text-align: center;
   margin: auto;
+  display: block;
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .feedback__block {
@@ -347,7 +354,6 @@ body {
 }
 
 .feedback__residence {
-  position: relative;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.86;
@@ -357,14 +363,6 @@ body {
   .feedback__residence {
     margin-top: 32px;
   }
-}
-
-.swiper-slide {
-  display: block;
-}
-
-.swiper-slide .swiper-pagination {
-  bottom: 0;
 }
 
 .swiper-slide .swiper-pagination-bullets {
@@ -380,12 +378,38 @@ body {
   bottom: 0;
 }
 
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 48px;
+  left: 0;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 80px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 100px;
+  }
+}
+
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   border-radius: 50%;
   background-color: #84a178;
+  margin: 0 9px;
 }
 
 .modal-title {
