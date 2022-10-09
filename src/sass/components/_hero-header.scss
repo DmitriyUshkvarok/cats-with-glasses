@@ -9,9 +9,10 @@ header {
 .header__container {
   justify-content: space-between;
   display: flex;
+  align-items: center;
 }
 
-.logo {
+.logo { 
   margin-top: 12px;
   display: block;
 }
@@ -41,7 +42,7 @@ header {
     text-transform: uppercase;
     color: $MainbackgroundColor;
     margin-bottom: 32px;
-    padding-top: 110px;
+    margin-top: 90px;
     font-family: Seymour One;
     font-size: 26px;
     line-height: 1.26;
@@ -116,3 +117,175 @@ header {
   bottom: 0;
   left: 0;
 }
+
+// Tablet 
+
+.header-btn { 
+  margin-top: 24px;
+  margin-left:32px;
+  
+  background-color: $secondBlockColor;
+  border: 0;
+  border-radius: 10px;
+  width: 152px;
+  height: 42px;
+  
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.21;
+  &:hover {
+    background-color: $hoverBtn;
+  }
+  &:focus {
+    background-color: $hoverBtn;
+    color: $MainbackgroundColor;
+  }
+  &:disabled {
+    background-color: $colorTime;
+  }
+  transition: color $animationTransition,
+  background-color $animationTransition;
+
+  &::after {content: '';
+    width: 12px;
+    height: 12px;
+    margin-left: 7px;
+    background-image: url('../images/test-strelka.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &:focus::after {
+  background-image: url('../images/test-strelka-white.png'); 
+  }
+
+  @include flexCentral()  
+}
+
+.hero__info {
+  margin-left: 27%;
+   
+  }
+
+.hero__text { 
+  width: 151px;
+  height: 85px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: $MainbackgroundColor;
+}
+
+.hero__arrow { 
+  background-color: transparent;
+  border: 0;
+  width: 40px;
+  padding: 0;
+
+}
+
+.hero__location--list {
+  position: absolute;
+  top:0px;
+  right:32;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+
+.hero__location--item {
+  font-size: 28px;
+  line-height: 1.21;
+  font-weight: 900;
+  
+  text-transform: uppercase;
+  text-align: end;
+}
+
+.hero__location--place {
+  color: $MainbackgroundColor;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-top: 4px;
+  text-align: end;
+}
+
+.cafes {
+  width: 35px;  
+  margin-bottom: 20px;
+}
+
+.food-truck {
+  width: 46px;
+}
+
+
+
+@media screen and (max-width:767px) {
+  .header-btn {
+    display: none;
+  }
+  .hero__text {
+    display: none;
+  }
+  .hero__arrow {
+    display: none;
+  }
+  .hero__location--list{
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .ice-cream {
+    display: none;
+  }
+
+  .mobile-menu-btn-open {
+    margin-top: 29px;
+    margin-left: auto;
+    
+  }
+
+  .header__container {
+    justify-content: flex-start;
+    
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .hero { position: static;
+    min-height: 415px;
+    padding-bottom: 10px;
+    background-image: url('../images/ice-cream-tablet-1x.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+   
+  }
+
+  .hero .container{
+    position: relative;
+  }
+
+
+  .hero__title{
+    font-size: 18px;
+    margin-top: 84px;
+  }
+
+
+.hero__button--list{
+  margin-bottom: 56px;
+}  
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width:768px), 
+           (min-resolution: 192dpi) and (min-width:768px) , 
+           (min-resolution: 2) and (min-width:768px) {
+            .hero {
+              background-image: url('../images/ice-cream-tablet@2x.png');
+            }
+           }
