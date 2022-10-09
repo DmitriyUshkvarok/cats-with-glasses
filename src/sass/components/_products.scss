@@ -139,5 +139,32 @@
     padding: 0;
     display: block;
     cursor: pointer;
-
+    position: relative;
 }
+
+.products__btn::before{
+   content: "";
+   display: inline-block;
+   width: 43px;
+   height: 15px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-image: url(../images/arrow.png);
+   background-repeat: no-repeat;
+}
+
+.products__btn:hover::before{
+    content: "";
+    width: 53px;
+    background-image: url(../images/arrow-hover.png);
+ }
+
+ .products__btn:focus::before{
+    content: "";
+    width: 55px;
+    height: 25px;
+    background-image: url(../images/arrow-focus.png);
+ }
+
