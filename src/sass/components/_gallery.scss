@@ -1,0 +1,40 @@
+.gallery {
+  background-image: linear-gradient(
+    to bottom,
+    $firstBlockColor 25px,
+    rgba(0, 0, 0, 0) 25px,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-slide img {
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    background-image: linear-gradient(
+      to bottom,
+      $firstBlockColor 165px,
+      rgba(0, 0, 0, 0) 165px,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}
+
+@media (min-width: 1200px) {
+  .gallery {
+    background-image: linear-gradient(
+      to bottom,
+      $firstBlockColor 95px,
+      rgba(0, 0, 0, 0) 95px,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+}

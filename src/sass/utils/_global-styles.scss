@@ -27,6 +27,24 @@ img {
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
+
+  @media screen and (min-width: 480px) {
+    .container {
+      width: 480px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+    }
+  }
+
+  @media screen and (min-width: 1200) {
+    .container {
+      width: 1200px;
+    }
+  }
 }
 
 html {
@@ -37,6 +55,8 @@ body {
   width: 100%;
   background-image: url('../images/ice-cream-fon\ 2.png');
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-attachment: fixed;
   margin: 0;
   font-family: $siteSerif, Arial, Helvetica, sans-serif;
@@ -44,4 +64,45 @@ body {
   background-color: $MainbackgroundColor;
   font-size: 12px;
   line-height: 1.86;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  transition: visibility $animationTransition, opacity $animationTransition;
+
+  &.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $MainbackgroundColor;
+  border: 2px solid $secondBlockColor;
+  border-radius: 10px;
+  width: 87.5%;
+}
+
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 568px;
+  }
 }
