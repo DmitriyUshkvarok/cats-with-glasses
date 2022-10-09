@@ -29,36 +29,31 @@ img {
   padding-right: 16px;
 }*/
 
-.container{
+.container {
   width: 100%;
- 
+
   padding-left: 15px;
   padding-right: 15px;
-  
 }
-@media screen and (min-width: 480px){
-  .container{
-      width: 480px;
-      margin-left: auto;
-      margin-right: auto; 
-      
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
 }
-@media screen and (min-width: 768px){
-  .container{
-      width: 768px;
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
   }
-
 }
-@media screen and (min-width: 1200px){
-  .container{
-      width: 1200px;
-  margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
   }
-
 }
 
 html {
@@ -118,5 +113,5 @@ body {
 @media screen and (min-width: 768px) {
   .modal {
     width: 568px;
-  } 
+  }
 }
