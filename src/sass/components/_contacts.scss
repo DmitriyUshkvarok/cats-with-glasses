@@ -1,7 +1,11 @@
 .contacts {
- background: $firstBlockColor; 
+background: url();
  padding-top: 48px;
  padding-bottom: 39px;
+  background-image: linear-gradient(to top,
+      $firstBlockColor 1265px,
+      rgba(0, 0, 0, 0) 1265px,
+      rgba(0, 0, 0, 0) 100%);
 }
 
 
