@@ -11,7 +11,7 @@ header {
   display: flex;
 }
 
-.logo {
+.logo { 
   margin-top: 12px;
   display: block;
 }
@@ -181,16 +181,77 @@ header {
   padding: 0;
 }
 
+.hero__location--list {
+  position: absolute;
+  top:94px;
+  right:32;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  
+}
+
+// .hero__location--item {
+//   font-size: 28px;
+//   line-height: 1.21;
+//   font-weight: 900;
+//   width: 35px;
+  
+//   text-transform: uppercase;
+  
+// }
+
+// .hero__location--word {
+//   min-width: 32px;
+//   font-size: 8px;
+//   font-weight: 400;
+//   line-height: 1.25;
+//   margin-bottom: 20px;
+  
+//   text-transform: none;
+// }
+
+.hero__location--item {
+  font-size: 28px;
+  line-height: 1.21;
+  font-weight: 900;
+  
+  text-transform: uppercase;
+  text-align: end;
+}
+
+.hero__location--place {
+  color: $MainbackgroundColor;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-top: 4px;
+  text-align: end;
+}
+
+.cafes {
+  width: 35px;  
+  margin-bottom: 20px;
+}
+
+.food-truck {
+  width: 46px;
+}
+
+
+
 @media screen and (max-width:767px) {
   .header-btn {
     display: none;
   }
-
   .hero__text {
     display: none;
   }
-
   .hero__arrow {
+    display: none;
+  }
+  .hero__location--list{
     display: none;
   }
 }
