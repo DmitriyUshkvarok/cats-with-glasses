@@ -3,7 +3,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 15;
+  // z-index: 20;
 }
 
 .header__container {
@@ -17,18 +17,89 @@ header {
   display: block;
 }
 
-.mobile-menu-btn-open {
-  height: 32px;
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-  margin-top: 16px;
+.site-nav {
+  position: relative;
+  z-index: 30;
 }
 
-.mobile-menu-open-icon {
-  fill: $MainbackgroundColor;
-  width: 32px;
-  height: 32px;
+.burger-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-menu {
+  display: none;
+  position: relative;
+  width: 24px;
+  height: 16px;
+  font-size: 0;
+  z-index: 40;
+}
+
+.burger-menu::before,
+.burger-menu::after {
+  content: '';
+  background-color: $MainbackgroundColor;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  transition: $animationTransition;
+}
+
+.burger-menu::before {
+  top: 0px;
+}
+
+.burger-menu::after {
+  bottom: 0;
+}
+
+.burger-menu .burger-menu__item {
+  background-color: $MainbackgroundColor;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 40%;
+}
+
+.burger-menu.is-open::before {
+  background-color: $MainbackgroundColor;
+  transform: rotate(-45deg);
+  top: 8px;
+  transition: $animationTransition;
+}
+
+.burger-menu.is-open::after {
+  background-color: $MainbackgroundColor;
+  transform: rotate(45deg);
+  bottom: 5px;
+}
+
+.burger-menu.is-open .burger-menu__item {
+  transform: scale(0);
+}
+
+@media (min-width: 200px) {
+  .burger-menu {
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 1200px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero {
@@ -120,18 +191,15 @@ header {
 // Tablet
 
 .header-btn {
-  margin-top: 24px;
-  margin-left: 32px;
-
   background-color: $secondBlockColor;
   border: 0;
   border-radius: 10px;
   width: 152px;
   height: 42px;
-
   font-size: 14px;
   font-weight: 600;
   line-height: 1.21;
+
   &:hover {
     background-color: $hoverBtn;
   }
@@ -157,8 +225,6 @@ header {
   &:focus::after {
     background-image: url('../images/test-strelka-white.png');
   }
-
-  @include flexCentral();
 }
 
 .hero__info {
@@ -233,17 +299,17 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .site-nav {
+    z-index: 10;
+  }
+
   .ice-cream {
     display: none;
   }
 
-  .mobile-menu-btn-open {
-    margin-top: 29px;
-    margin-left: auto;
-  }
-
-  .header__container {
-    justify-content: flex-start;
+  .burger-wrapper {
+    display: flex;
+    gap: 30px;
   }
 
   .hero {
@@ -285,18 +351,6 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
-  .mobile-menu-btn-open {
-    display: none;
-  }
-
-  .header-btn {
-    margin-left: 0;
-  }
-
-  .header__container {
-    justify-content: space-between;
-  }
-
   .site-nav {
     @include flexCentral;
   }
