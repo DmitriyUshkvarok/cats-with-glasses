@@ -13,6 +13,32 @@
     padding-bottom: 148px;
 }
 
+@media screen and(min-width: 768px) {
+    .products{
+        padding-bottom: 92px;
+    }
+    .page-sup-title-dark{
+        font-size: 22px;
+    }
+    .page-title-dark{
+        font-size: 34px;
+    }
+}
+
+@media screen and(min-width: 1200px) {
+    .products{
+        padding-bottom: 66px;
+    }
+    .page-sup-title-dark{
+        font-size: 30px;
+    }
+    .page-title-dark{
+        font-size: 36px;
+    }
+}
+
+
+
 .products__list{
     display: flex;
     flex-direction: column;
