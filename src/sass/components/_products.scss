@@ -78,15 +78,6 @@
     background-repeat: no-repeat;
 }
 
-@media
-  screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-    .products__product-name-one::before{
-        background-image: url(../images/product-mobile-1@2x.png);
-    }
-}
-
 .products__item-two{
     background:#EFD478;
     position: relative;
@@ -145,6 +136,8 @@
     border: none;
     background: transparent;
     margin: 0 auto;
+    padding: 0;
     display: block;
     cursor: pointer;
+
 }
