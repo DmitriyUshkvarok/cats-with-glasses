@@ -1,0 +1,51 @@
+.mob-menu {
+  position: fixed;
+  z-index: 100;
+
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 100px 23px 63px 23px;
+  top: 0;
+  background-color: #85a279;
+
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+  }
+  &__link {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+    color: $MainbackgroundColor;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.menu-close {
+  display: block;
+  position: absolute;
+  padding: auto;
+
+  width: 32px;
+  height: 32px;
+  right: 20px;
+  top: 16px;
+  background-color: transparent;
+  border-color: transparent;
+
+  cursor: pointer;
+
+  &__icon {
+    width: 19px;
+    height: 19px;
+    fill: $MainbackgroundColor;
+  }
+}
