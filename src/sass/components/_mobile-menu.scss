@@ -1,0 +1,26 @@
+.mob-menu {
+  position: fixed;
+  z-index: 100;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 100px 23px 63px 23px;
+  top: 0;
+  background-color: #85a279;
+
+  //   @media screen and (min-width: 1200px) {
+  //     display: none;
+  //   }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+  }
+  &_link {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: calc(39 / 32);
+    color: $MainbackgroundColor;
+  }
+}
