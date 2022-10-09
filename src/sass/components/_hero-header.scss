@@ -12,7 +12,7 @@ header {
   align-items: center;
 }
 
-.logo { 
+.logo {
   margin-top: 12px;
   display: block;
 }
@@ -63,51 +63,50 @@ header {
     @include flexCentral;
     transition: color $animationTransition;
   }
-
 }
 
-
 .products-link {
-    width: 62px;
-    height: 24px;
-    background-color: transparent;
-    border: 2px solid $secondBlockColor;
-    border-radius: 8px;
-    font-weight: 600;
-    color: #131313;
-    transition: border $animationTransition;
+  width: 62px;
+  height: 24px;
+  background-color: transparent;
+  border: 2px solid $secondBlockColor;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #131313;
+  transition: border $animationTransition;
 
-    &:hover{
-      border-color: $hoverBtn;
-    }
+  &:hover {
+    border-color: $hoverBtn;
+  }
 
-    &:disabled {
-      border-color: $colorTime;
-    }
-  
-    &:focus { border-color: $hoverBtn;
+  &:disabled {
+    border-color: $colorTime;
+  }
+
+  &:focus {
+    border-color: $hoverBtn;
     color: $MainbackgroundColor;
   }
 }
 
 .about-link {
-    width: 83px;
-    height: 24px;
-    background-color: transparent;
-    border: 0;
-    color: $secondBlockColor;
-    text-decoration: underline;
-    transition: color $animationTransition;
+  width: 83px;
+  height: 24px;
+  background-color: transparent;
+  border: 0;
+  color: $secondBlockColor;
+  text-decoration: underline;
+  transition: color $animationTransition;
 
-    &:hover {
+  &:hover {
     color: $hoverBtn;
   }
 
-    &:focus {
+  &:focus {
     color: $MainbackgroundColor;
   }
 
-    &:disabled {
+  &:disabled {
     color: $colorTime;
   }
 }
@@ -118,18 +117,18 @@ header {
   left: 0;
 }
 
-// Tablet 
+// Tablet
 
-.header-btn { 
+.header-btn {
   margin-top: 24px;
-  margin-left:32px;
-  
+  margin-left: 32px;
+
   background-color: $secondBlockColor;
   border: 0;
   border-radius: 10px;
   width: 152px;
   height: 42px;
-  
+
   font-size: 14px;
   font-weight: 600;
   line-height: 1.21;
@@ -143,10 +142,10 @@ header {
   &:disabled {
     background-color: $colorTime;
   }
-  transition: color $animationTransition,
-  background-color $animationTransition;
+  transition: color $animationTransition, background-color $animationTransition;
 
-  &::after {content: '';
+  &::after {
+    content: '';
     width: 12px;
     height: 12px;
     margin-left: 7px;
@@ -156,18 +155,17 @@ header {
   }
 
   &:focus::after {
-  background-image: url('../images/test-strelka-white.png'); 
+    background-image: url('../images/test-strelka-white.png');
   }
 
-  @include flexCentral()  
+  @include flexCentral();
 }
 
 .hero__info {
   margin-left: 27%;
-   
-  }
+}
 
-.hero__text { 
+.hero__text {
   width: 151px;
   height: 85px;
   line-height: 1.4;
@@ -175,30 +173,28 @@ header {
   color: $MainbackgroundColor;
 }
 
-.hero__arrow { 
+.hero__arrow {
   background-color: transparent;
   border: 0;
   width: 40px;
   padding: 0;
-
 }
 
 .hero__location--list {
   position: absolute;
-  top:0px;
-  right:32;
+  top: 0px;
+  right: 32;
 
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  
 }
 
 .hero__location--item {
   font-size: 28px;
   line-height: 1.21;
   font-weight: 900;
-  
+
   text-transform: uppercase;
   text-align: end;
 }
@@ -213,7 +209,7 @@ header {
 }
 
 .cafes {
-  width: 35px;  
+  width: 35px;
   margin-bottom: 20px;
 }
 
@@ -221,9 +217,7 @@ header {
   width: 46px;
 }
 
-
-
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .header-btn {
     display: none;
   }
@@ -233,12 +227,12 @@ header {
   .hero__arrow {
     display: none;
   }
-  .hero__location--list{
+  .hero__location--list {
     display: none;
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .ice-cream {
     display: none;
   }
@@ -246,30 +240,27 @@ header {
   .mobile-menu-btn-open {
     margin-top: 29px;
     margin-left: auto;
-    
   }
 
   .header__container {
     justify-content: flex-start;
-    
   }
 
-  .hero { position: static;
+  .hero {
+    position: static;
     min-height: 415px;
     padding-bottom: 10px;
     background-image: url('../images/ice-cream-tablet-1x.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
-   
   }
 
-  .hero .container{
+  .hero .container {
     position: relative;
   }
 
-
-  .hero__title{
+  .hero__title {
     font-size: 18px;
     margin-top: 84px;
   }
@@ -405,4 +396,18 @@ header {
            }
 }
 
+
+
+  .hero__button--list {
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2) and (min-width: 768px) {
+  .hero {
+    background-image: url('../images/ice-cream-tablet@2x.png');
+  }
+}
 
