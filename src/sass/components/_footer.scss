@@ -100,8 +100,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: color $animationTransitions, width $animationTransitions,
-      height $animationTransitions;
+    transition: $animationTransition;
 
     @media screen and (min-width: 768px) {
       width: 34px;
@@ -110,7 +109,7 @@
 
     &:hover {
       color: $MainbackgroundColor;
-      transition: color $animationTransitions;
+      transition: $animationTransition;
     }
 
     &:focus {
@@ -118,14 +117,13 @@
       height: 35px;
       width: 35px;
       outline: none;
-      transition: color $animationTransitions, width $animationTransitions,
-        height $animationTransitions;
+      transition: $animationTransition;
     }
   }
 
   &__icon {
     fill: currentColor;
-    transition: fill $animationTransitions;
+    transition: $animationTransition;
   }
 }
 
