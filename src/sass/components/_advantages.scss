@@ -1,0 +1,117 @@
+.advantages{
+    background-color:$firstBlockColor;
+    margin-top: 0;
+}
+.hide-line{
+    position: relative;
+    margin-top:-4px;
+    margin-bottom:-4px;
+}
+.advantages__icon{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $secondBlockColor;
+   
+    }
+
+.cow::after{
+        content: '';
+  display: inline-block;
+  position: absolute;
+  background-image: url('../images/cow.png');
+  background-repeat: no-repeat;
+  width: 36px;
+  height: 36px;
+}
+.weight::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-image: url('../images/weight.png');
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px; 
+}
+.ice-cream::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    background-image: url('../images/ice-crema.png');
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 36px; 
+}
+.advantages__numbers{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+  
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $MainbackgroundColor;
+    margin-top: 16px;
+    margin-bottom: 18px;
+}
+.advantages__text{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 170%;
+text-align: center;
+color: $MainbackgroundColor;
+padding-bottom: 27px;
+
+}
+.advantages__item{
+    width: 230px;
+   margin: 0 auto;
+
+}
+
+@media screen and (min-width: 768px) {
+    .advantages__list{
+        display: flex;
+        gap: 80px;
+        justify-content: center;
+        padding-bottom: 40px;
+    }
+    .advantages__text {
+font-size: 14px;
+font-weight: 400;
+padding:0;
+}
+.advantages__numbers {
+    font-size: 48px;}
+    .avantages__item{
+        width: 152px;
+    }
+   
+}
+@media screen and (min-width: 1200px){
+    .advantages__list{
+        gap: 32px;
+        padding-bottom: 86px;
+    }
+    .advantages__item{
+        width: 368px;
+    }
+    .advantages__text {
+        font-size: 16px;
+        font-weight: 400;
+        padding:0;
+        }
+        .advantages__numbers {
+    font-size: 58px;}
+}   
