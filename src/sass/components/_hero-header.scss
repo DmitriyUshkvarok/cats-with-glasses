@@ -252,8 +252,6 @@ header {
   .header__container {
     justify-content: flex-start;
     
-    padding-left: 32px;
-    padding-right: 32px;
   }
 
   .hero { position: static;
@@ -276,11 +274,12 @@ header {
     margin-top: 84px;
   }
 
-
 .hero__button--list{
   margin-bottom: 56px;
 }  
 }
+
+
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width:768px), 
            (min-resolution: 192dpi) and (min-width:768px) , 
@@ -288,4 +287,122 @@ header {
             .hero {
               background-image: url('../images/ice-cream-tablet@2x.png');
             }
+}
+
+@media screen and (max-width:1199px) {
+  .site-nav__list {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1200px) {
+  .mobile-menu-btn-open {
+    display: none;
+  }
+
+  .header-btn {
+    margin-left: 0;
+  }
+        
+ .header__container {
+  justify-content: space-between;
+ }
+
+ .site-nav {
+  @include flexCentral
+ }
+
+ .site-nav__list {
+  display: flex;
+  gap: 27px;
+  margin-top: 39px;
+  margin-left: 269px;
+ }
+
+ .site-nav__link {
+  font-weight: 700;
+  font-size: 16px;
+  color: $MainbackgroundColor;
+
+  &:hover , &:focus {
+    color: $secondBlockColor;
+  }
+
+  transition: color $animationTransition;
+  
+  @include font(16px,20px)
+ }
+
+ .header-btn {
+  margin-top: 28px;
+ }
+
+ .logo {
+  margin-top: 8px;
+ }
+
+ .hero {
+  min-height: 664px;
+  background-image: url('../images/ice-cream-desktop-1x.png');
+}
+
+.hero__title {
+  font-size: 38px;
+  margin-top: 98px;
+  @include font(38px,48px)
+}
+
+.hero__button--link {
+  font-size: 14px;
+@include font(14px,17px)
+}
+
+.products-link {
+  width: 134px;
+  height: 42px;
+}
+
+.about-link {
+  width: 154px;
+  height: 40px;
+}
+
+.hero__location--item {
+  font-size: 46px;
+
+@include font(46px,56px)
+}
+
+.hero__location--place {
+  font-size: 14px;
+  @include font(14px,17px)
+}
+.food-truck {
+  width: 79px;
+}
+
+.hero__location--list {
+  top: 20px;
+  right: 16px;
+}
+
+.hero__text {
+  font-size: 14px;
+  width: 200px;
+}
+
+.hero__info{
+  margin-left: 20.5%;
+  margin-top: 9%;
+}
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width:1200px), 
+          (min-resolution: 192dpi) and (min-width:1200px) , 
+          (min-resolution: 2) and (min-width:1200px) {
+           .hero {
+             background-image: url('../images/ice-cream-desktop@2x.png');
            }
+}
+
+

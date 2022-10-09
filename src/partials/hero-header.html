@@ -3,6 +3,9 @@
         <nav class="site-nav">
             <a class="logo" href="#">
                 <picture>
+                    <source srcset="./images/logo-desktop-1x.png 1x, 
+                    ./images/logo-desktop@2x.png 2x" 
+                     media="(min-width:1200px)">
                     <source srcset="./images/logo-tablet.png 1x, 
                     ./images/logo-tablet@2x.png 2x" 
                      media="(min-width:768px)">
@@ -12,6 +15,13 @@
                     <img src="./images/logo-mobile.png" alt="Logo">
                 </picture>
             </a>
+
+            <ul class="site-nav__list">
+                <li class="site-nav__item"><a class="site-nav__link" href="#">Home</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#about">How it's made?</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#products">Our products</a></li>
+                <li class="site-nav__item"><a class="site-nav__link" href="#contacts">Contact</a></li>
+            </ul>
         </nav>
         <button class="mobile-menu-btn-open" type="button">
             <svg class="mobile-menu-open-icon">
@@ -36,9 +46,6 @@
             <li>
 
                 <a class="hero__button--link about-link" href="#about">How it's made?</a>
-
-                <a class="hero__button--link about-link" href="#about">Howit&#8216s
-                    made?</a>
 
             </li>
         </ul>
