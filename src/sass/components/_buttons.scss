@@ -35,18 +35,6 @@
     background-color: transparent;
     transition: color $animationTransition, border $animationTransition;
 
-    &:hover, &:focus {
-        border: 2px solid $hoverBtn;
-    }
-
-    &:focus {
-        color: $MainbackgroundColor;
-    }
-
-    &:disabled {
-        border: $colorTime;
-    }
-
     &__franchise {
         padding: 10px 46px;
     }
@@ -61,8 +49,45 @@
     font-weight: 600;
     @include font (8px, 10px);
     background-color: transparent;
-    padding: 5px 12px;
+    padding: 5px 12px 4px 12px;
     transition: color $animationTransition, border $animationTransition;
+}
+
+.button-contour:hover, .button-contour:focus,
+.button-contour__products:hover, .button-contour__products:focus {
+    border: 2px solid $hoverBtn;
+}
+
+.button-contour:focus, .button-contour__products:focus {
+    color: $MainbackgroundColor;
+}
+
+.button-contour:disabled, .button-contour__products:disabled {
+    border: $colorTime;
+}
+
+.button-underline {
+    font-weight: 600;
+    @include font (8px, 10px);
+    text-decoration-line: underline;
+    cursor: pointer;
+    border: none;
+    color: $secondBlockColor;
+    background-color: transparent;
+    padding: 0;
+    transition: color $animationTransition;
+
+    &:hover {
+        color: $hoverBtn;
+    }
+
+    &:focus {
+        color: $MainbackgroundColor;
+    }
+
+    &:disabled {
+        color: $colorTime;
+    }
 }
 
 .btn-arrow {
@@ -123,6 +148,16 @@
 }
 
 @media screen and (min-width: 768px) {
+
+    .button-contour__products {
+        padding: 10px 34px;
+        @include font (14px, 18px);
+    }
+
+    .button-underline {
+        @include font (14px, 18px);
+    }
+
     .modal-button {
         margin-top: 32px;
         @include font (14px, 17px);
