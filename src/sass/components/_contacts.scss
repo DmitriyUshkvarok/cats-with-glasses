@@ -2,14 +2,16 @@
 .contacts  {
       padding-bottom: 39px;
       background-image: linear-gradient(to top,
-          $firstBlockColor 1265px,
-          rgba(0, 0, 0, 0) 1265px,
+          $firstBlockColor 1290px,
+          rgba(0, 0, 0, 0) 1290px,
           rgba(0, 0, 0, 0) 100%);
+          font-size: 12px;
 }
 
 .contacts__item {
-  width: 280px;
-  height: 412px;
+  max-width: 280px;
+  justify-content: center;
+  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
   padding: 40px 32px;
@@ -29,7 +31,7 @@
   padding: 4px 12px;
   @include flexCentral();
   margin-bottom: 20px;
-  width: 94px;
+  width: 80px;
   height: 16px;
   text-transform: uppercase;
   background-color: $secondBlockColor;
@@ -47,6 +49,7 @@
 }
 
 .contacts__text {
+
   color: $threeColorProduct;
 
   &:hover,
@@ -106,6 +109,7 @@
 }
 
 .contacts__button--locations {
+  font-size: 14px;
   position: relative;
   width: 196px;
   height: 42px;
@@ -135,6 +139,7 @@
 }
 
 .contacts__button--franchise {
+  font-size: 14px;
   position: relative;
   width: 196px;
   height: 42px;
@@ -166,20 +171,19 @@
   .contacts {
     padding-bottom: 40px;
     background-image: linear-gradient(to top,
-        $firstBlockColor 600px,
-        rgba(0, 0, 0, 0) 600px,
+        $firstBlockColor 530px,
+        rgba(0, 0, 0, 0) 530px,
         rgba(0, 0, 0, 0) 100%);
+        font-size: 14px;
   }
 
   .contacts__list {
     display: flex;
-    justify-content: space-between;
-    gap: 32px;
+    gap: 16px;
   }
 
   .contacts__item {
-    width: 224px;
-    height: 528px;
+    max-width: 224px;
     margin-left: auto;
     margin-right: auto;
     padding: 40px 24px;
@@ -194,26 +198,29 @@
       box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.3);
     }
   }
+    .contacts__title {
+      width: 138px;
+      height: 28px;
+    }
 }
   @media screen and (min-width: 1200px) {
     
   .contacts {
     padding-bottom: 40px;
     background-image: linear-gradient(to top,
-        $firstBlockColor 800px,
-        rgba(0, 0, 0, 0) 800px,
+        $firstBlockColor 660px,
+        rgba(0, 0, 0, 0) 660px,
         rgba(0, 0, 0, 0) 100%);
+        font-size: 16px;
   }
   
   .contacts__list {
     display: flex;
-    justify-content: space-between;
     gap: 32px;
   }
 
   .contacts__item {
-    width: 368px;
-    height: 538px;
+    max-width: 368px;
     margin-left: auto;
     margin-right: auto;
     padding: 40px 40px;
@@ -228,4 +235,8 @@
       box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.3);
     }
   }
+    .contacts__title {
+      width: 138px;
+      height: 28px;
+    }
   }
