@@ -1,1 +1,37 @@
-hi
+<div class="backdrop" data-modal>
+  <div class="modal">
+    <button class="modal-btn" type="button" data-modal-close>
+      <svg class="modal-close">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <form class="modal-form" action="#">
+      <p class="modal-title">Buy now</p>
+      <input
+        class="modal-form-input"
+        type="text"
+        name="user-name"
+        placeholder="Name"
+      />
+      <br />
+      <input
+        class="modal-form-input"
+        type="tel"
+        name="user-phone"
+        minlength="12"
+        pattern="[0-9]{12}"
+        title="380123456789"
+        placeholder="Phone"
+      />
+      <br />
+      <textarea
+        class="modal-form-message"
+        name="user-message"
+        placeholder="Comment"
+      ></textarea>
+      <br />
+      <button class="modal-form-button" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
