@@ -1,3 +1,21 @@
+.page-sup-title-dark{
+  font-family: $siteSerif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.23;
+  text-transform: uppercase;
+  color: $firstColor;
+}
+
+.page-title-dark{
+  font-family: 'Seymour One';
+  font-size: 30px;
+  line-height: 1.26;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $firstColor;
+}
+
 .page-sup-title {
   font-family: $siteSerif;
   font-weight: 800;
