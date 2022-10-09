@@ -76,6 +76,21 @@
   font-size: 14px;
   font-weight: 600;
   font-family: 'Montserrat';
+  &:hover{
+    background: $hoverBtn; 
+
+}
+&:focus{
+  background: $hoverBtn; 
+  color: $MainbackgroundColor;
+  &::after {
+    background-image: url('../images/strelka-white.png');
+  }
+}
+&:disabled{
+  background: $colorTime; 
+  
+}
 }
 
 .about__button::after {
