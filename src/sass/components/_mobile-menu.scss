@@ -23,11 +23,72 @@
     font-size: 32px;
     line-height: calc(39 / 32);
     color: $MainbackgroundColor;
+    @media screen and (max-width: 479px) {
+      font-size: 25px;
+    }
+    @media screen and (min-width: 768px) {
+      font-size: 48px;
+      line-height: calc(59 / 48);
+    }
+    &:hover,
+    &:focus {
+      color: $firstColor;
+    }
   }
   &__item:not(:last-child) {
     margin-bottom: 32px;
   }
 }
+@media screen and (max-width: 767px) {
+  .header-btn--mob-menu {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 111px;
+    background-color: $secondBlockColor;
+    border: 0;
+    border-radius: 10px;
+    width: 152px;
+    height: 42px;
+
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.21;
+    &:hover {
+      background-color: $hoverBtn;
+    }
+    &:focus {
+      background-color: $hoverBtn;
+      color: $MainbackgroundColor;
+    }
+    &:disabled {
+      background-color: $colorTime;
+    }
+    transition: color $animationTransition,
+      background-color $animationTransition;
+
+    &::after {
+      content: '';
+      width: 12px;
+      height: 12px;
+      margin-left: 7px;
+      background-image: url('../images/test-strelka.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &:focus::after {
+      background-image: url('../images/test-strelka-white.png');
+    }
+
+    @include flexCentral();
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-btn--mob-menu {
+    display: none;
+  }
+}
+
 .menu-close {
   display: block;
   position: absolute;
