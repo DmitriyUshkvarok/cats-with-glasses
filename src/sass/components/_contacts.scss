@@ -1,5 +1,5 @@
 .contacts {
-background: url();
+  background-image: url('../images/ice-cream-fon\ 2.png');
  padding-top: 48px;
  padding-bottom: 39px;
   background-image: linear-gradient(to top,
@@ -58,8 +58,6 @@ padding-bottom: 24px;
   &:focus {
    color: $hoverBtn;
   }
-
-
 }
 .contacts__work{
  padding: 24px 0;
@@ -111,6 +109,7 @@ padding-bottom: 24px;
 }
 
 .contacts__button--locations {
+  position: relative;
  width: 196px;
  height: 42px;
  color: $firstColor;
@@ -120,22 +119,26 @@ padding-bottom: 24px;
  margin-bottom: 16px;
   &::after {
       content: "";
+      position: absolute;
+        display: inline-block;
+        top: 35%;
+        left: 80%;
+        transform: translate(-50% -50%);
       width: 12px;
       height: 12px;
       margin-left: 7px;
-      background-image: url("/src/images/arrow2.png");
-      background-size: contain;
+      background-image: url("../images/arrow2.png");
+      // background-size: contain;
       background-repeat: no-repeat;
     }
   
     &:focus::after {
-      background-image: url("/src/images/arrow2.png");
+      background-image: url("../images/arrow2.png");
     }
   }
 
-
-
 .contacts__button--franchise {
+  position: relative;
  width: 196px;
  height: 42px;
  color:$firstColor;
@@ -144,16 +147,21 @@ padding-bottom: 24px;
  border-radius: 10px;
   &::after {
       content: "";
+      position: absolute;
+      display: inline-block;
+      top: 35%;
+      left: 80%;
+      transform: translate(-50% -50%);
       width: 12px;
       height: 12px;
       margin-left: 7px;
-      background-image: url("/src/images/arrow2.png");
-      background-size: contain;
+      background-image: url("../images/arrow2.png");
+      // background-size: contain;
       background-repeat: no-repeat;
     }
   
     &:focus::after {
-      background-image: url("/src/images/arrow2.png");
+      background-image: url("../images/arrow2.png");
     }
     }
   
