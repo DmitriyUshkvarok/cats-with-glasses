@@ -1,7 +1,6 @@
-<!-- Icecream modal -->
-<div class="backdrop is-hidden" product-modal>
-  <div class="modal">
-    <button type="button" class="modal__close-btn" product-modal-close>
+<div class="backdrop is-hidden" product-modal-two>
+  <div class="modal modal--icecream">
+    <button type="button" class="modal__close-btn" product-modal-two-close>
       <svg width="20px" height="20px">
         <use href="./images/ice-cream-modal-close-btn.svg#icon-close"></use>
       </svg>
@@ -11,16 +10,16 @@
       <source
         srcset="./images/ch-icecr.jpg 1x, ./images/ch-icecr@2x.jpg 2x"
         media="(max-width:767px)"
-        />
+      />
       <source
         srcset="./images/ch-icecr.jpg 1x, ./images/ch-icecr@2x.jpg 2x"
         media="(min-width:768px)"
-        />
+      />
       <img
         class="modal__image"
         src="./images/ch-icecr.jpg"
         alt="Chololate icecream"
-        />
+      />
     </picture>
 
     <ul class="modal__list">
@@ -96,7 +95,7 @@
             required
             placeholder="Name"
             name="user-name"
-            />
+          />
         </span>
       </label>
       <label class="modal__form-field">
@@ -109,7 +108,7 @@
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
             title="xxx-xxx-xx-xx"
             name="user-phone"
-            />
+          />
         </span>
       </label>
 
@@ -117,7 +116,8 @@
         <textarea
           class="modal__form-message"
           placeholder="Comment"
-          name="user-message"></textarea>
+          name="user-message"
+        ></textarea>
       </label>
       <button type="submit" class="modal__submit-btn">Submit</button>
     </form>

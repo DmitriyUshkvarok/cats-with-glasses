@@ -1,16 +1,17 @@
 <!-- About modal -->
-<div class="backdrop is-hidden">
+<div class="backdrop is-hidden" about-modal>
   <div class="modal about-modal">
     <span class="about-modal__title">How it's made?</span>
     <div class="about-modal__video">
       <iframe
         width="100%"
+        height="100%"
         src="https://www.youtube.com/embed/hO-7cz7gyAY"
         title="YouTube video player"
         frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
 
     <p class="about-modal__text">
@@ -19,7 +20,7 @@
       adipiscing elit, sed do eiusmod tempor incididunt ut labore et
     </p>
 
-    <button class="close-btn" data-modal-close>
+    <button class="close-btn" about-modal-close>
       <svg width="16" height="16">
         <use href="./images/sprite.svg#close-btn"></use>
       </svg>
