@@ -1,11 +1,11 @@
-<div class="backdrop visually-hidden">
-  <div class="modal">
-    <button type="button" class="modal__close-btn" data-modal-close>
-      <svg width="20px" height="20px">
-        <use href="./images/ice-cream-modal-close-btn.svg#icon-close"></use>
+<div class="backdrop is-hidden">
+  <div class="modal modal__address">
+    <button type="button" class="modal-close-btn">
+      <svg class="close-icon">
+        <use href="./images/sprite.svg#close-btn"></use>
       </svg>
     </button>
-    <h2 class="topic">Chololate icecream</h2>
+    <p class="modal-title">Chololate icecream</p>
     <picture class="modal__picture">
       <source
         srcset="./images/ch-icecr.jpg 1x, ./images/ch-icecr@2x.jpg 2x"
@@ -36,7 +36,7 @@
           <div class="item__element-part">
             <p class="element-part-text">4g</p>
           </div>
-          <p class="element-part-name">Protein...</p>
+          <p class="element-part-name">Prote...</p>
         </div>
       </li>
       <li class="modal__list_item">
@@ -84,42 +84,22 @@
         <p class="text-list__item-numbers">10g</p>
       </li>
     </ul>
-
-    <form class="modal__form">
-      <label class="modal__form-field">
-        <span class="modal__form-input-wrapper">
-          <input
-            class="modal__form-input"
-            type="text"
-            pattern="[a-zA-Za-яА-ЯіІїЇ]+"
-            required
-            placeholder="Name"
-            name="user-name"
-          />
-        </span>
-      </label>
-      <label class="modal__form-field">
-        <span class="modal__form-input-wrapper">
-          <input
-            placeholder="Phone"
-            class="modal__form-input"
-            type="tel"
-            required
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            title="xxx-xxx-xx-xx"
-            name="user-phone"
-          />
-        </span>
-      </label>
-
-      <label class="modal__form-field modal__form-field-message">
-        <textarea
-          class="modal__form-message"
-          placeholder="Comment"
-          name="user-message"
-        ></textarea>
-      </label>
-      <button type="submit" class="modal__submit-btn">Submit</button>
-    </form>
+    <div class="modal-form-wrapper">
+      <form class="modal-form">
+        <label class="modal-form__label">
+            <input class="modal-form__input" type="text" pattern="[a-zA-Za-яА-ЯіІїЇ]+" autofocus required placeholder="Name"
+              name="user-name" />
+        </label>
+        <label class="modal-form__label">
+            <input placeholder="Phone" class="modal-form__input" type="tel" required
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" name="user-phone" />
+        </label>
+      
+        <label class="modal-form__label modal__form-field-message">
+          <textarea class="modal-form__comment" placeholder="Comment" name="comment"></textarea>
+        </label>
+      </form>
+      <button type="submit" class="modal-button">Submit</button>
+    </div>
   </div>
 </div>
