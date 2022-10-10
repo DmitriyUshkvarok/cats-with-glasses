@@ -7,17 +7,12 @@
   transform: translate(-50%, -50%) scale(1) rotate(0deg);
   background-color: #ffffff;
   border-radius: 10px;
-<<<<<<< Updated upstream
-  transition: transform 500ms var(--transition-timing);
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.1) rotate(180deg);
-  transition: transform 500ms var(--transition-timing);
-=======
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.1) rotate(180deg);
->>>>>>> Stashed changes
 }
 
 .modal-close {
@@ -33,31 +28,12 @@
   position: absolute;
   top: 8px;
   right: 8px;
-<<<<<<< Updated upstream
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-=======
->>>>>>> Stashed changes
   background-color: inherit;
 }
 
 .modal-form {
   display: flex;
   flex-direction: column;
-<<<<<<< Updated upstream
-  padding: 40px;
-}
-
-.modal-title {
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #131313;
-=======
-  padding: 100px;
 }
 
 .modal-title {
@@ -65,5 +41,4 @@
   @include font(16px, 24px);
   color: $firstColor;
   text-align: center;
->>>>>>> Stashed changes
 }
