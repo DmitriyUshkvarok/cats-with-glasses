@@ -1,126 +1,126 @@
 .modal__picture {
-    position: relative;
-    border-radius: 50%;
-    border: none;
-    max-width: 132px;
-    height: 132px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 22px;
-    margin-bottom: 24px;
-    background: linear-gradient(0deg,
-            rgba(156, 190, 143, 0.7),
-            rgba(156, 190, 143, 0.7)),
-        #d9d9d9;
-    box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+  position: relative;
+  border-radius: 50%;
+  border: none;
+  max-width: 132px;
+  height: 132px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 22px;
+  margin-bottom: 24px;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
 }
 
 .modal__image {
-    border-radius: 50%;
-    position: absolute;
-    top: -7px;
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
 }
 
 .modal__list {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 0;
-    gap: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+  gap: 10px;
 }
 
 .item__element {
-    position: relative;
-    border: 2px solid #9cbe8f;
-    border-radius: 40px;
-    width: 53px;
-    height: 72px;
+  position: relative;
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  width: 53px;
+  height: 72px;
 }
 
 .item__element-part {
-    position: absolute;
-    width: 43px;
-    height: 43px;
-    left: 3px;
-    top: -2px;
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  left: 3px;
+  top: -2px;
 
-    border-radius: 50%;
-    background: #9cbe8f;
-    border: 2px solid #9cbe8f;
-    box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
 }
 
 .element-part-name {
-    padding-top: 45px;
-    @include font (10px, 12px);
-    color: $firstColor;
+  padding-top: 45px;
+  @include font(10px, 12px);
+  color: $firstColor;
 }
 
 .element-part-text {
-    padding-top: 5px;
-    font-weight: 500;
-    @include font (10px, 28px);
-    color: $firstColor;
+  padding-top: 5px;
+  font-weight: 500;
+  @include font(10px, 28px);
+  color: $firstColor;
 }
 
 .modal__text {
-    margin-top: 39px;
-    margin-bottom: 24px;
-    font-weight: 500;
-    @include font (20px, 28px);
-    text-align: center;
-    color: $firstColor;
+  margin-top: 39px;
+  margin-bottom: 24px;
+  font-weight: 500;
+  @include font(20px, 28px);
+  text-align: center;
+  color: $firstColor;
 }
 
 .modal__text-list {
-    margin-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .text-list__item {
-    display: flex;
-    justify-content: space-between;
-    @include font (14px, 25px);
-    letter-spacing: 0.04em;
-    color: $firstColor;
+  display: flex;
+  justify-content: space-between;
+  @include font(14px, 25px);
+  letter-spacing: 0.04em;
+  color: $firstColor;
 
-    &:not(:last-child) {
-        margin-bottom: 11px;
-    }
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .modal__list {
+    gap: 20px;
+  }
 
-    .modal__list {
-        gap: 20px;
-    }
+  .modal__picture {
+    margin-top: 26px;
+  }
 
-    .modal__picture {
-        margin-top: 26px;
-    }
+  .item__element {
+    width: 65px;
+    height: 90px;
+  }
 
-    .item__element {
-        width: 65px;
-        height: 90px;
-    }
+  .item__element-part {
+    width: 53px;
+    height: 53px;
+  }
 
-    .item__element-part {
-        width: 53px;
-        height: 53px;
-    }
+  .element-part-name {
+    padding-top: 58px;
+    @include font(12px, 15px);
+  }
 
-    .element-part-name {
-        padding-top: 58px;
-        @include font (12px, 15px);
+  .element-part-text {
+    padding-top: 12px;
+    @include font(12px, 28px);
+  }
 
-    }
-
-    .element-part-text {
-        padding-top: 12px;
-        @include font (12px, 28px);
-    }
-
-    .modal__text {
-        margin-top: 47px;
-    }
+  .modal__text {
+    margin-top: 47px;
+  }
 }

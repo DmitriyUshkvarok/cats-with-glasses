@@ -29,8 +29,6 @@
 
 .mob-list__link {
   font-weight: 700;
-  // font-size: 32px;
-  // line-height: 39px;
   @include font(32px, 39px);
   color: $MainbackgroundColor;
 }
