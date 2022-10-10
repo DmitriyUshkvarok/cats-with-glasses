@@ -90,7 +90,7 @@
     }
   }
 
-  /*Social svg*/
+ 
   &__link {
     background-color: $secondBlockColor;
     border-radius: 50%;
@@ -100,7 +100,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: $animationTransition;
+    transition: fill $animationTransition;
 
     @media screen and (min-width: 768px) {
       width: 34px;
@@ -109,7 +109,7 @@
 
     &:hover {
       color: $MainbackgroundColor;
-      transition: $animationTransition;
+      transition: color $animationTransition;
     }
 
     &:focus {
@@ -117,13 +117,13 @@
       height: 35px;
       width: 35px;
       outline: none;
-      transition: $animationTransition;
+      transition: color $animationTransition;
     }
   }
 
   &__icon {
     fill: currentColor;
-    transition: $animationTransition;
+    transition: fill $animationTransition;
   }
 }
 
