@@ -1,24 +1,40 @@
 <header>
     <div class="container header__container">
         <nav class="site-nav">
+            <!-- logo -->
             <a class="logo" href="#">
                 <picture>
-                    <source srcset="./images/logo-tablet.png 1x, 
-                    ./images/logo-tablet@2x.png 2x" 
-                     media="(min-width:768px)">
+                    <source srcset="./images/logo-desktop-1x.png 1x,
+                        ./images/logo-desktop@2x.png 2x"
+                        media="(min-width:1200px)">
+                    <source srcset="./images/logo-tablet.png 1x,
+                        ./images/logo-tablet@2x.png 2x"
+                        media="(min-width:768px)">
+
                     <source srcset="./images/logo-mobile.png 1x,
                         ./images/logo-mobile@2x.png 2x"
                         media="(max-width:767px)">
                     <img src="./images/logo-mobile.png" alt="Logo">
                 </picture>
             </a>
+            <!-- nav list -->
+            <ul class="site-nav__list">
+                <li class="site-nav__item"><a class="site-nav__link" href="#">Home</a></li>
+                <li class="site-nav__item"><a class="site-nav__link"
+                        href="#about">How it's made?</a></li>
+                <li class="site-nav__item"><a class="site-nav__link"
+                        href="#products">Our products</a></li>
+                <li class="site-nav__item"><a class="site-nav__link"
+                        href="#contacts">Contact</a></li>
+            </ul>
         </nav>
-        <button class="mobile-menu-btn-open" type="button">
-            <svg class="mobile-menu-open-icon">
-                <use href="./images/sprite.svg#mobile-menu-open"></use>
-            </svg>
-        </button>
-        <button class="header-btn" type="button" data-modal-open>Buy now</button>
+        <div class="burger-wrapper">
+            <!-- burger -->
+            <button class="burger-menu" data-menu-button>
+                <span class="burger-menu__item">burger-menu</span>
+            </button>
+            <button class="header-btn" type="button"
+                data-modal-open>Buy now</button></div>
     </div>
 </header>
 
@@ -34,20 +50,18 @@
                 <a class="hero__button--link products-link" href="#products">Products</a>
             </li>
             <li>
-
-                <a class="hero__button--link about-link" href="#about">How it's made?</a>
-
-                <a class="hero__button--link about-link" href="#about">Howit&#8216s
+                <a class="hero__button--link about-link" href="#about">How it's
                     made?</a>
-
             </li>
         </ul>
 
-       <div class="hero__info"> 
-        <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-        <button class="hero__arrow" type="button"><img src="./images/arrow-white.png" alt=""></button>
-       </div>
-        <ul class="hero__location--list" >
+        <div class="hero__info">
+            <p class="hero__text">Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+            <button class="hero__arrow" type="button"><img
+                    src="./images/arrow-white.png" alt=""></button>
+        </div>
+        <ul class="hero__location--list">
             <li class="hero__location--item">16</li>
             <li class="hero__location--place cafes">cafes</li>
             <li class="hero__location--item">23</li>
@@ -55,11 +69,8 @@
         </ul>
     </div>
 
-    
-            <img class="ice-cream" src="./images/ice-cream-mobile@2x.png" alt="">         
-    
-    
 
+    <img class="ice-cream" src="./images/ice-cream-mobile@2x.png" alt="">
     <picture>
         <source>
         <img class="ice-cream" src="./images/ice-cream-mobile@2x.png" alt="">

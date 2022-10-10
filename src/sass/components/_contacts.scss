@@ -1,20 +1,180 @@
+@media screen and (min-width: 480px) {
+  .contacts {
+    width: 480px;
+    padding-top: 48px;
+    padding-bottom: 39px;
+    background-image: linear-gradient(
+      to top,
+      $firstBlockColor 1265px,
+      rgba(0, 0, 0, 0) 1265px,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
 
-.contacts  {
-      padding-bottom: 39px;
-      background-image: linear-gradient(to top,
-          $firstBlockColor 1290px,
-          rgba(0, 0, 0, 0) 1290px,
-          rgba(0, 0, 0, 0) 100%);
-          font-size: 12px;
+  .contacts__card-wrap {
+    margin-top: 32px;
+  }
+
+  .contacts__item {
+    width: 280px;
+    height: 412px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 32px;
+    margin-top: 20px;
+    background: $MainbackgroundColor;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    transition: $animationTransition;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.3);
+    }
+  }
+
+  .contacts__title {
+    padding: 4px 12px;
+    @include flexCentral();
+    margin-bottom: 20px;
+    width: 94px;
+    height: 16px;
+    text-transform: uppercase;
+    background-color: $secondBlockColor;
+    border-radius: 6px;
+  }
+
+  .contacts__address {
+    padding-bottom: 24px;
+  }
+
+  .contacts__location {
+    margin-bottom: 8px;
+    color: $firstColor;
+  }
+
+  .contacts__text {
+    color: $threeColorProduct;
+
+    &:hover,
+    &:focus {
+      color: $hoverBtn;
+    }
+  }
+
+  .contacts__work {
+    padding: 24px 0;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+  }
+
+  .contacts__work-time {
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
+  }
+
+  .contacts__day {
+    color: $firstColor;
+  }
+
+  .contacts__time {
+    color: $colorTime;
+  }
+
+  .contacts__connection {
+    padding-top: 24px;
+    text-decoration: none;
+  }
+
+  .contacts__link {
+    cursor: pointer;
+    color: $firstColor;
+
+    &:hover,
+    &:focus {
+      color: $threeColorProduct;
+    }
+  }
+
+  .contacts__button-wrap {
+    flex-direction: column;
+    @include flexCentral();
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 59px;
+    margin-bottom: 120px;
+  }
+
+  .contacts__button--locations {
+    position: relative;
+    width: 196px;
+    height: 42px;
+    color: $firstColor;
+    background-color: $secondBlockColor;
+    border-radius: 10px;
+    border: 2px solid $secondBlockColor;
+    margin-bottom: 16px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      top: 35%;
+      left: 80%;
+      transform: translate(-50% -50%);
+      width: 8px;
+      height: 10px;
+      margin-left: 7px;
+      background-image: url('../images/arrow2.png');
+      background-repeat: no-repeat;
+    }
+
+    &:focus::after {
+      background-image: url('../images/arrow2.png');
+    }
+  }
+
+  .contacts__button--franchise {
+    position: relative;
+    width: 196px;
+    height: 42px;
+    color: $firstColor;
+    background-color: $firstBlockColor;
+    border: 2px solid $secondBlockColor;
+    border-radius: 10px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: inline-block;
+      top: 35%;
+      left: 80%;
+      transform: translate(-50% -50%);
+      width: 8px;
+      height: 10px;
+      margin-left: 7px;
+      background-image: url('../images/arrow2.png');
+      background-repeat: no-repeat;
+    }
+
+    &:focus::after {
+      background-image: url('../images/arrow2.png');
+    }
+  }
+}
+
+.contacts__card-wrap {
+  margin-top: 32px;
 }
 
 .contacts__item {
-  max-width: 280px;
-  justify-content: center;
-  flex-direction: column;
+  width: 280px;
+  height: 412px;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 32px;
+  padding: 20px 20px;
   margin-top: 20px;
   background: $MainbackgroundColor;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -31,12 +191,11 @@
   padding: 4px 12px;
   @include flexCentral();
   margin-bottom: 20px;
-  width: 80px;
+  width: 94px;
   height: 16px;
   text-transform: uppercase;
   background-color: $secondBlockColor;
   border-radius: 6px;
-
 }
 
 .contacts__address {
@@ -49,9 +208,7 @@
 }
 
 .contacts__text {
-
   color: $threeColorProduct;
-
   &:hover,
   &:focus {
     color: $hoverBtn;
@@ -60,9 +217,8 @@
 
 .contacts__work {
   padding: 24px 0;
-  border-top: 1px solid #E1E1E1;
-  border-bottom: 1px solid #E1E1E1;
-
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
 }
 
 .contacts__work-time {
@@ -72,26 +228,20 @@
 }
 
 .contacts__day {
-
   color: $firstColor;
-
 }
 
 .contacts__time {
   color: $colorTime;
-
-
 }
 
 .contacts__connection {
   padding-top: 24px;
-
 }
 
 .contacts__link {
   cursor: pointer;
   color: $firstColor;
-
   &:hover,
   &:focus {
     color: $threeColorProduct;
@@ -109,7 +259,6 @@
 }
 
 .contacts__button--locations {
-  font-size: 14px;
   position: relative;
   width: 196px;
   height: 42px;
@@ -118,9 +267,8 @@
   border-radius: 10px;
   border: 2px solid $secondBlockColor;
   margin-bottom: 16px;
-
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     display: inline-block;
     top: 35%;
@@ -129,17 +277,16 @@
     width: 8px;
     height: 10px;
     margin-left: 7px;
-    background-image: url("../images/arrow2.png");
+    background-image: url('../images/arrow2.png');
     background-repeat: no-repeat;
   }
 
   &:focus::after {
-    background-image: url("../images/arrow2.png");
+    background-image: url('../images/arrow2.png');
   }
 }
 
 .contacts__button--franchise {
-  font-size: 14px;
   position: relative;
   width: 196px;
   height: 42px;
@@ -147,9 +294,8 @@
   background-color: $firstBlockColor;
   border: 2px solid $secondBlockColor;
   border-radius: 10px;
-
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     display: inline-block;
     top: 35%;
@@ -158,85 +304,11 @@
     width: 8px;
     height: 10px;
     margin-left: 7px;
-    background-image: url("../images/arrow2.png");
+    background-image: url('../images/arrow2.png');
     background-repeat: no-repeat;
   }
 
   &:focus::after {
-    background-image: url("../images/arrow2.png");
+    background-image: url('../images/arrow2.png');
   }
 }
-
-@media screen and (min-width: 768px) {
-  .contacts {
-    padding-bottom: 40px;
-    background-image: linear-gradient(to top,
-        $firstBlockColor 530px,
-        rgba(0, 0, 0, 0) 530px,
-        rgba(0, 0, 0, 0) 100%);
-        font-size: 14px;
-  }
-
-  .contacts__list {
-    display: flex;
-    gap: 16px;
-  }
-
-  .contacts__item {
-    max-width: 224px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px 24px;
-    margin-top: 20px;
-    background: $MainbackgroundColor;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    transition: $animationTransition;
-
-    &:hover {
-      transform: scale(1.05);
-      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.3);
-    }
-  }
-    .contacts__title {
-      width: 138px;
-      height: 28px;
-    }
-}
-  @media screen and (min-width: 1200px) {
-    
-  .contacts {
-    padding-bottom: 40px;
-    background-image: linear-gradient(to top,
-        $firstBlockColor 660px,
-        rgba(0, 0, 0, 0) 660px,
-        rgba(0, 0, 0, 0) 100%);
-        font-size: 16px;
-  }
-  
-  .contacts__list {
-    display: flex;
-    gap: 32px;
-  }
-
-  .contacts__item {
-    max-width: 368px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 40px 40px;
-    margin-top: 20px;
-    background: $MainbackgroundColor;
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    border-radius: 24px;
-    transition: $animationTransition;
-
-    &:hover {
-      transform: scale(1.05);
-      box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.3);
-    }
-  }
-    .contacts__title {
-      width: 138px;
-      height: 28px;
-    }
-  }

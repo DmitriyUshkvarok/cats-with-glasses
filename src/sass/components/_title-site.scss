@@ -34,3 +34,22 @@
   color: $MainbackgroundColor;
 }
 
+@media screen and(min-width: 768px) {
+  .page-sup-title-dark{
+      font-size: 22px;
+  }
+  .page-title-dark{
+      font-size: 34px;
+      margin-bottom: 200px;
+    }
+  }
+
+  @media screen and(min-width: 1200px) {
+    .page-sup-title-dark{
+        font-size: 30px;
+    }
+    .page-title-dark{
+        font-size: 36px;
+        margin-bottom: 284px;
+    }  
+  }  

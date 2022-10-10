@@ -136,7 +136,7 @@
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  box-shadow: 0px 5.41333px 20.3px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
   border-radius: 101px;
   background-image: url(../images/product-mobile-3.png);
   background-repeat: no-repeat;
@@ -190,4 +190,97 @@
   width: 55px;
   height: 25px;
   background-image: url(../images/arrow-focus.png);
+}
+
+@media screen and(min-width: 480px) {
+  .products__item {
+    width: 280px;
+  }
+}
+
+@media screen and(min-width: 768px) {
+  .products {
+    padding-bottom: 92px;
+  }
+  .products__list {
+    flex-direction: row;
+    gap: 16px;
+    justify-content: center;
+  }
+  .products__item {
+    width: 224px;
+    height: 420px;
+    margin: 0;
+    padding-top: 119px;
+  }
+  .products__product-name {
+    font-size: 22px;
+  }
+  .products__product-info-wrapper {
+    width: 172px;
+    height: 175px;
+    margin-bottom: 40px;
+  }
+  .products__product-name-one::before {
+    background-image: url(../images/product-1-tablet.png);
+    width: 200px;
+    height: 208px;
+  }
+  .products__product-name-two::before {
+    background-image: url(../images/product-2-tablet.png);
+    width: 200px;
+    height: 208px;
+  }
+  .products__product-name-three::before {
+    background-image: url(../images/product-3-tablet.png);
+    width: 200px;
+    height: 208px;
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .products {
+    padding-bottom: 66px;
+  }
+  .products__list {
+    gap: 32px;
+  }
+  .products__item {
+    width: 370.16px;
+    height: 535px;
+    padding-top: 180px;
+  }
+  .products__product-name {
+    font-size: 30px;
+    margin-bottom: 65px;
+  }
+  .products__product-info-wrapper {
+    width: 242px;
+    height: 142px;
+    margin-bottom: 66px;
+  }
+  .products__product-info {
+    font-size: 16px;
+  }
+  .products__product-name-one::before {
+    background-image: url(../images/product-1-desktop.png);
+    width: 302px;
+    height: 317px;
+    box-shadow: 0px 8px 30px rgba(10, 136, 23, 0.25);
+    border-radius: 150px;
+  }
+  .products__product-name-two::before {
+    background-image: url(../images/product-2-desktop.png);
+    width: 302px;
+    height: 317px;
+    box-shadow: 0px 8px 30px rgba(153, 114, 23, 0.25);
+    border-radius: 150px;
+  }
+  .products__product-name-three::before {
+    background-image: url(../images/product-3-desktop.png);
+    width: 302px;
+    height: 317px;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.25);
+    border-radius: 150px;
+  }
 }
