@@ -188,43 +188,6 @@ header {
 
 // Tablet
 
-.header-btn {
-  background-color: $secondBlockColor;
-  border: 0;
-  border-radius: 10px;
-  width: 152px;
-  height: 42px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.21;
-
-  &:hover {
-    background-color: $hoverBtn;
-  }
-  &:focus {
-    background-color: $hoverBtn;
-    color: $MainbackgroundColor;
-  }
-  &:disabled {
-    background-color: $colorTime;
-  }
-  transition: color $animationTransition, background-color $animationTransition;
-
-  &::after {
-    content: '';
-    width: 12px;
-    height: 12px;
-    margin-left: 7px;
-    background-image: url('../images/test-strelka.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  &:focus::after {
-    background-image: url('../images/test-strelka-white.png');
-  }
-}
-
 .hero__info {
   margin-left: 27%;
 }
@@ -307,7 +270,8 @@ header {
 
   .burger-wrapper {
     display: flex;
-    gap: 30px;
+    gap: 32px;
+    margin-top: 24px;
   }
 
   .hero {
@@ -375,7 +339,7 @@ header {
     @include font(16px, 20px);
   }
 
-  .header-btn {
+  .burger-wrapper {
     margin-top: 28px;
   }
 
@@ -392,6 +356,10 @@ header {
     font-size: 38px;
     margin-top: 98px;
     @include font(38px, 48px);
+  }
+
+  .hero__button--list {
+    gap: 12px;
   }
 
   .hero__button--link {
@@ -448,8 +416,6 @@ header {
 }
 
 .hero__button--list {
-  margin-bottom: 56px;
-
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
     (min-resolution: 192dpi) and (min-width: 768px),
     (min-resolution: 2) and (min-width: 768px) {

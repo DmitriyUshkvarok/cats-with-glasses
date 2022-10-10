@@ -18,15 +18,15 @@
         <div class="modal-form-wrapper">
             <form class="modal-form" autocomplete="on">
                 <label class="modal-form__label">
-                    <input type="text" name="username" placeholder="Name"
-                        class="modal-form__input" autofocus required>
+                    <input type="text" name="user-name" placeholder="Name"
+                        class="modal-form__input" pattern="[a-zA-Za-яА-ЯіІїЇ]+" autofocus required>
                 </label>
                 <label class="modal-form__label">
-                    <input type="tel" name="telephone" placeholder="Phone"
+                    <input type="tel" name="user-phone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx"
                         class="modal-form__input" required>
                 </label>
                 <label class="modal-form__label">
-                    <input type="email" name="email" placeholder="Email"
+                    <input type="email" name="user-email" placeholder="Email"
                         class="modal-form__input" required>
                 </label>
                 <label class="modal-form__label">

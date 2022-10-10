@@ -61,53 +61,15 @@
   }
 }
 
-.about__button {
-  @include flexCentral;
-  position: relative;
-  width: 164px;
-  height: 42px;
-  border: none;
-  border-radius: 10px;
-  background-color: $secondBlockColor;
-  color: $firstColor;
-  cursor: pointer;
-  margin: 0px auto;
-  font-size: 14px;
-  font-weight: 600;
-  font-family: 'Montserrat';
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover {
-    background: $hoverBtn;
-  }
-
-  &:focus {
-    background: $hoverBtn;
-    color: $MainbackgroundColor;
-    &::after {
-      background-image: url('../images/strelka-white.png');
-    }
-  }
-
-  &:disabled {
-    background: $colorTime;
-  }
-}
-
-.about__button::after {
-  content: '';
-  display: inline-block;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 80%;
-  background-image: url('../images/strelka.png');
-  background-repeat: no-repeat;
-  width: 8px;
-  height: 10px;
-}
-
 .about__info {
   padding-bottom: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .about-btn {
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -138,10 +100,6 @@
 
   .about__description {
     width: 336px;
-  }
-
-  .about__button {
-    margin: 0;
   }
 
   .page-title {

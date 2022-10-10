@@ -34,8 +34,15 @@
             <button class="burger-menu">
                 <span class="burger-menu__item">burger-menu</span>
             </button>
-            <button class="header-btn" type="button"
-                data-modal-open>Buy now</button></div>
+            <button class="button header-btn" type="button" data-modal-open>
+                <span class="button__span">
+                    Buy now
+                    <svg class="btn-arrow">
+                        <use href="./images/sprite.svg#btn-arrow"></use>
+                    </svg>
+                </span>
+            </button>
+        </div>
     </div>
 </header>
 
@@ -51,8 +58,7 @@
                 <a class="hero__button--link products-link" href="#products">Products</a>
             </li>
             <li>
-                <a class="hero__button--link about-link" href="#about">How it's
-                    made?</a>
+                <a class="hero__button--link about-link" href="#about">How it's made?</a>
             </li>
         </ul>
 

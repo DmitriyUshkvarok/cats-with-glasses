@@ -42,12 +42,15 @@
 }
 
 .button-contour__products {
+    display: block;
+    text-align: center;
     border: 2px solid $secondBlockColor;
     border-radius: 8px;
     cursor: pointer;
     color: $firstColor;
     font-weight: 600;
     @include font (8px, 10px);
+    height: 24px;
     background-color: transparent;
     padding: 5px 12px 4px 12px;
     transition: color $animationTransition, border $animationTransition;
@@ -74,7 +77,8 @@
     border: none;
     color: $secondBlockColor;
     background-color: transparent;
-    padding: 0;
+    width: 82px;
+    height: 24px;
     transition: color $animationTransition;
 
     &:hover {
