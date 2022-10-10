@@ -27,7 +27,7 @@ img {
   margin-right: auto;
   padding-left: 16px;
   padding-right: 16px;
-
+}
   @media screen and (min-width: 480px) {
     .container {
       width: 480px;
@@ -45,12 +45,14 @@ img {
 
   }
 
-  @media screen and (min-width: 1200) {
+  @media screen and (min-width: 1200px) {
     .container {
       width: 1200px;
+      padding-left: 16px;
+      padding-right: 16px;
     }
   }
-}
+
 
 html {
   scroll-behavior: smooth;

@@ -178,6 +178,7 @@
     font-size: 14px;
     line-height: 1.5;
     width: 150px;
+    color: $colorCopyright;
 
     @media screen and (min-width: 768px) {
       width: 300px;
@@ -189,7 +190,5 @@
       line-height: 186%;
       letter-spacing: 0.02em;
     }
-
-    color: $colorCopyright;
   }
 }
