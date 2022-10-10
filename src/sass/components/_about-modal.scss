@@ -1,0 +1,66 @@
+.about-modal {
+  position: relative;
+  padding: 28px;
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 60px;
+  }
+  &__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__video {
+    margin-bottom: 20px;
+    display: block;
+  }
+
+  &__text {
+    font-family: $siteSerif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42;
+
+    @media screen and (min-width: 768px) {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+}
+
+.close-btn {
+  position: absolute;
+  border: none;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  fill: currentColor;
+  cursor: pointer;
+  background-color: transparent;
+  transition: color $animationTransition, border $animationTransition;
+
+  &:hover,
+  &:focus {
+    color: $hoverBtn;
+    transition: color $animationTransition;
+  }
+
+  &:focus {
+    outline: none;
+    border: 1px solid $hoverBtn;
+    border-radius: 50%;
+    transition: border $animationTransition;
+  }
+}
