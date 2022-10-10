@@ -9,3 +9,4 @@ import './js/product-modal';
 import './js/product-modal-two';
 import './js/product-modal-three';
 import './js/fancybox';
+import './js/hidden-panel';
