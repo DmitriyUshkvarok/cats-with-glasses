@@ -16,6 +16,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 32px;
+
 }
 
 .contact-list__item {
@@ -23,7 +24,10 @@
   padding: 40px 32px;
   background-color: #fcfcfc;
   border-radius: 24px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  
 }
+
 
 .list__item__in {
   padding-top: 25px;
@@ -108,6 +112,11 @@
   font-size: 12px;
   line-height: 18px;
   color: $firstColor;
+  transition: $animationTransition;
+    &:hover,
+    &:focus {
+      color: $secondBlockColor;
+    }
 }
 
 .contact-btn-list {
@@ -153,8 +162,11 @@
   .day-work,
   .day-off,
   .time-work,
-  .time-day-off {
+  .time-day-off,
+  .tel-number,
+  .email {
     font-size: 14px;
+    line-height: 26px;
   }
 
   .contact-btn-list {
@@ -192,7 +204,10 @@
   .day-work,
   .day-off,
   .time-work,
-  .time-day-off {
+  .time-day-off,
+  .tel-number,
+  .email {
     font-size: 15px;
+    line-height: 29px;
   }
 }
