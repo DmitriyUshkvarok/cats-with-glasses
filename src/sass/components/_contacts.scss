@@ -1,14 +1,170 @@
-@media screen and (min-width: 480px) {
-  .contacts {
-    width: 480px;
-    padding-top: 48px;
-    padding-bottom: 39px;
-    background-image: linear-gradient(
-      to top,
-      $firstBlockColor 1265px,
-      rgba(0, 0, 0, 0) 1265px,
-      rgba(0, 0, 0, 0) 100%
-    );
+.contacts {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0px,
+    rgba(0, 0, 0, 0) 345px,
+    $firstBlockColor 345px,
+    $firstBlockColor 100%
+  );
+  padding-bottom: 40px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.contacts__item {
+  width: 280px;
+  height: 412px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 32px;
+  margin-top: 20px;
+  background: $MainbackgroundColor;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  transition: fill $animationTransition;
+
+  .list__item__in {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+  .list__item__in:first-child {
+    padding-top: 0;
+  }
+
+  .list__item__in:last-child {
+    padding-bottom: 0;
+  }
+
+  .list__item__in:not(:last-child) {
+    border-bottom: 1px solid #e1e1e1;
+  }
+
+  .infro {
+    padding: 0px 25px;
+    margin-bottom: 20px;
+    background-color: $secondBlockColor;
+    display: inline-block;
+    color: $firstColor;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+    text-transform: uppercase;
+  }
+
+  .city {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: $firstColor;
+    margin-bottom: 8px;
+  }
+
+  .map {
+    color: $threeColorProduct;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    display: inline-block;
+    transition: $animationTransition;
+
+    &:hover,
+    &:focus {
+      color: $secondBlockColor;
+    }
+  }
+
+  .day-work,
+  .day-off {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: $firstColor;
+    margin-bottom: 2px;
+  }
+
+  .time-work,
+  .time-day-off {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    color: #ababab;
+    margin-bottom: 8px;
+  }
+
+  .time-day-off {
+    margin-bottom: 0;
+  }
+
+  .tel-number,
+  .email {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: $firstColor;
+  }
+
+  .contact-btn-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cont-btn {
+    width: 196px;
+    height: 42px;
+  }
+
+  @media (min-width: 768px) {
+    .contacts {
+      background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0px,
+        rgba(0, 0, 0, 0) 95px,
+        $firstBlockColor 95px
+      );
+    }
+
+    .contacts__button--franchise {
+      position: relative;
+      width: 196px;
+      height: 42px;
+      color: $firstColor;
+      background-color: $firstBlockColor;
+      border: 2px solid $secondBlockColor;
+      border-radius: 10px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: inline-block;
+        top: 35%;
+        left: 80%;
+        transform: translate(-50% -50%);
+        width: 8px;
+        height: 10px;
+        margin-left: 7px;
+        background-image: url('../images/arrow2.png');
+        background-repeat: no-repeat;
+      }
+
+      &:focus::after {
+        background-image: url('../images/arrow2.png');
+      }
+    }
   }
 
   .contacts__card-wrap {
@@ -20,7 +176,7 @@
     height: 412px;
     margin-left: auto;
     margin-right: auto;
-    padding: 40px 32px;
+    padding: 20px 20px;
     margin-top: 20px;
     background: $MainbackgroundColor;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -55,7 +211,6 @@
 
   .contacts__text {
     color: $threeColorProduct;
-
     &:hover,
     &:focus {
       color: $hoverBtn;
@@ -68,247 +223,60 @@
     border-bottom: 1px solid #e1e1e1;
   }
 
-  .contacts__work-time {
-    &:not(:last-child) {
-      margin-bottom: 8px;
-    }
+  .contact-list__item {
+    width: 224px;
+    padding: 40px 24px;
   }
 
-  .contacts__day {
-    color: $firstColor;
+  .infro {
+    font-size: 16px;
   }
 
-  .contacts__time {
-    color: $colorTime;
+  .city,
+  .map,
+  .day-work,
+  .day-off,
+  .time-work,
+  .time-day-off {
+    font-size: 14px;
   }
 
-  .contacts__connection {
-    padding-top: 24px;
-    text-decoration: none;
+  .contact-btn-list {
+    flex-direction: row;
   }
 
-  .contacts__link {
-    cursor: pointer;
-    color: $firstColor;
-
-    &:hover,
-    &:focus {
-      color: $threeColorProduct;
-    }
-  }
-
-  .contacts__button-wrap {
-    flex-direction: column;
-    @include flexCentral();
-    padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 59px;
-    margin-bottom: 120px;
-  }
-
-  .contacts__button--locations {
-    position: relative;
-    width: 196px;
-    height: 42px;
-    color: $firstColor;
-    background-color: $secondBlockColor;
-    border-radius: 10px;
-    border: 2px solid $secondBlockColor;
-    margin-bottom: 16px;
-
-    &::after {
-      content: '';
-      position: absolute;
-      display: inline-block;
-      top: 35%;
-      left: 80%;
-      transform: translate(-50% -50%);
-      width: 8px;
-      height: 10px;
-      margin-left: 7px;
-      background-image: url('../images/arrow2.png');
-      background-repeat: no-repeat;
-    }
-
-    &:focus::after {
-      background-image: url('../images/arrow2.png');
-    }
-  }
-
-  .contacts__button--franchise {
-    position: relative;
-    width: 196px;
-    height: 42px;
-    color: $firstColor;
-    background-color: $firstBlockColor;
-    border: 2px solid $secondBlockColor;
-    border-radius: 10px;
-
-    &::after {
-      content: '';
-      position: absolute;
-      display: inline-block;
-      top: 35%;
-      left: 80%;
-      transform: translate(-50% -50%);
-      width: 8px;
-      height: 10px;
-      margin-left: 7px;
-      background-image: url('../images/arrow2.png');
-      background-repeat: no-repeat;
-    }
-
-    &:focus::after {
-      background-image: url('../images/arrow2.png');
-    }
+  .cont-btn {
+    justify-content: center;
   }
 }
 
-.contacts__card-wrap {
-  margin-top: 32px;
-}
-
-.contacts__item {
-  width: 280px;
-  height: 412px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px 20px;
-  margin-top: 20px;
-  background: $MainbackgroundColor;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
-  transition: fill $animationTransition;
-
-  &:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.3);
-  }
-}
-
-.contacts__title {
-  padding: 4px 12px;
-  @include flexCentral();
-  margin-bottom: 20px;
-  width: 94px;
-  height: 16px;
-  text-transform: uppercase;
-  background-color: $secondBlockColor;
-  border-radius: 6px;
-}
-
-.contacts__address {
-  padding-bottom: 24px;
-}
-
-.contacts__location {
-  margin-bottom: 8px;
-  color: $firstColor;
-}
-
-.contacts__text {
-  color: $threeColorProduct;
-  &:hover,
-  &:focus {
-    color: $hoverBtn;
-  }
-}
-
-.contacts__work {
-  padding: 24px 0;
-  border-top: 1px solid #e1e1e1;
-  border-bottom: 1px solid #e1e1e1;
-}
-
-.contacts__work-time {
-  &:not(:last-child) {
-    margin-bottom: 8px;
-  }
-}
-
-.contacts__day {
-  color: $firstColor;
-}
-
-.contacts__time {
-  color: $colorTime;
-}
-
-.contacts__connection {
-  padding-top: 24px;
-}
-
-.contacts__link {
-  cursor: pointer;
-  color: $firstColor;
-  &:hover,
-  &:focus {
-    color: $threeColorProduct;
-  }
-}
-
-.contacts__button-wrap {
-  flex-direction: column;
-  @include flexCentral();
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 59px;
-  margin-bottom: 120px;
-}
-
-.contacts__button--locations {
-  position: relative;
-  width: 196px;
-  height: 42px;
-  color: $firstColor;
-  background-color: $secondBlockColor;
-  border-radius: 10px;
-  border: 2px solid $secondBlockColor;
-  margin-bottom: 16px;
-  &::after {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    top: 35%;
-    left: 80%;
-    transform: translate(-50% -50%);
-    width: 8px;
-    height: 10px;
-    margin-left: 7px;
-    background-image: url('../images/arrow2.png');
-    background-repeat: no-repeat;
+@media (min-width: 1200px) {
+  .contacts {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0px,
+      rgba(0, 0, 0, 0) 100px,
+      $firstBlockColor 100px,
+      $firstBlockColor 100%
+    );
   }
 
-  &:focus::after {
-    background-image: url('../images/arrow2.png');
-  }
-}
-
-.contacts__button--franchise {
-  position: relative;
-  width: 196px;
-  height: 42px;
-  color: $firstColor;
-  background-color: $firstBlockColor;
-  border: 2px solid $secondBlockColor;
-  border-radius: 10px;
-  &::after {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    top: 35%;
-    left: 80%;
-    transform: translate(-50% -50%);
-    width: 8px;
-    height: 10px;
-    margin-left: 7px;
-    background-image: url('../images/arrow2.png');
-    background-repeat: no-repeat;
+  .contact-list {
+    gap: 32px;
+    margin-bottom: 76px;
   }
 
-  &:focus::after {
-    background-image: url('../images/arrow2.png');
+  .contact-list__item {
+    width: 368px;
+    padding: 40px;
+  }
+
+  .city,
+  .map,
+  .day-work,
+  .day-off,
+  .time-work,
+  .time-day-off {
+    font-size: 15px;
   }
 }

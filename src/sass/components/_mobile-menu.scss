@@ -24,6 +24,7 @@
   align-items: center;
   gap: 30px;
   margin-top: 80px;
+  margin-bottom: 111px;
 }
 
 .mob-list__link {
@@ -51,5 +52,9 @@
 
   .mobile-menu.is-open {
     transform: translateX(-24%);
+  }
+
+  .mobile-btn {
+    display: none;
   }
 }
