@@ -1,79 +1,79 @@
 .modal-desc {
-    color: $firstColor;
-    @include font (14px, 20px);
-    margin-top: 20px;
-    margin-bottom: 24px;
+  color: $firstColor;
+  @include font(14px, 20px);
+  margin-top: 20px;
+  margin-bottom: 24px;
 }
 
 .modal-form-wrapper {
-    text-align: center;
+  text-align: center;
 }
 
 .modal-form {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .modal-form__input {
-    height: 32px;
-    padding-left: 12px;
+  height: 32px;
+  padding-left: 12px;
 }
 
 .modal-form__comment {
-    display: block;
-    margin: 0 auto;
-    height: 64px;
-    resize: none;
-    padding: 8px 12px;
+  display: block;
+  margin: 0 auto;
+  height: 64px;
+  resize: none;
+  padding: 8px 12px;
 }
 
 .modal-form__comment,
 .modal-form__input {
-    width: 100%;
-    border: 1px solid $firstBlockColor;
-    border-radius: 10px;
-    background-color: $colorInput;
-    transition: border $animationTransition;
+  width: 100%;
+  border: 1px solid $firstBlockColor;
+  border-radius: 10px;
+  background-color: $colorInput;
+  transition: border $animationTransition;
 
-    &:focus {
-        outline: none;
-        border: 1px solid $hoverBtn;
-    }
+  &:focus {
+    outline: none;
+    border: 1px solid $hoverBtn;
+  }
 
-    &::placeholder {
-        @include font (12px, 17px);
-        color: $firstColor;
-    }
+  &::placeholder {
+    @include font(12px, 17px);
+    color: $firstColor;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .modal-desc {
-        @include font (16px, 22px);
-        margin-top: 24px;
-        margin-bottom: 32px;
-    }
+  .modal-desc {
+    @include font(16px, 22px);
+    margin-top: 24px;
+    margin-bottom: 32px;
+  }
 
-    .modal-form {
-        gap: 16px;
-    }
+  .modal-form {
+    gap: 16px;
+  }
 
-    .modal-form__comment,
-    .modal-form__input {
-        width: 368px;
-        
-        &::placeholder {
-            @include font (14px, 20px);
-        }
-    }
+  .modal-form__comment,
+  .modal-form__input {
+    width: 368px;
 
-    .modal-form__input {
-        height: 32px;
-        padding-left: 16px;
+    &::placeholder {
+      @include font(14px, 20px);
     }
+  }
 
-    .modal-form__comment {
-        height: 84px;
-        padding: 11px 16px;
-    }
+  .modal-form__input {
+    height: 32px;
+    padding-left: 16px;
+  }
+
+  .modal-form__comment {
+    height: 84px;
+    padding: 11px 16px;
+  }
 }
