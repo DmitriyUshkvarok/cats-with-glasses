@@ -3,12 +3,13 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 15;
+  // z-index: 20;
 }
 
 .header__container {
   justify-content: space-between;
   display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -16,18 +17,89 @@ header {
   display: block;
 }
 
-.mobile-menu-btn-open {
-  height: 32px;
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-  margin-top: 16px;
+.site-nav {
+  position: relative;
+  z-index: 30;
 }
 
-.mobile-menu-open-icon {
-  fill: $MainbackgroundColor;
-  width: 32px;
-  height: 32px;
+.burger-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-menu {
+  display: none;
+  position: relative;
+  width: 24px;
+  height: 16px;
+  font-size: 0;
+  z-index: 40;
+}
+
+.burger-menu::before,
+.burger-menu::after {
+  content: '';
+  background-color: $MainbackgroundColor;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  transition: $animationTransition;
+}
+
+.burger-menu::before {
+  top: 0px;
+}
+
+.burger-menu::after {
+  bottom: 0;
+}
+
+.burger-menu .burger-menu__item {
+  background-color: $MainbackgroundColor;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 40%;
+}
+
+.burger-menu.is-open::before {
+  background-color: $MainbackgroundColor;
+  transform: rotate(-45deg);
+  top: 8px;
+  transition: $animationTransition;
+}
+
+.burger-menu.is-open::after {
+  background-color: $MainbackgroundColor;
+  transform: rotate(45deg);
+  bottom: 5px;
+}
+
+.burger-menu.is-open .burger-menu__item {
+  transform: scale(0);
+}
+
+@media (min-width: 200px) {
+  .burger-menu {
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 1200px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero {
@@ -41,7 +113,7 @@ header {
     text-transform: uppercase;
     color: $MainbackgroundColor;
     margin-bottom: 32px;
-    padding-top: 110px;
+    margin-top: 90px;
     font-family: Seymour One;
     font-size: 26px;
     line-height: 1.26;
@@ -62,51 +134,50 @@ header {
     @include flexCentral;
     transition: color $animationTransition;
   }
-
 }
 
-
 .products-link {
-    width: 62px;
-    height: 24px;
-    background-color: transparent;
-    border: 2px solid $secondBlockColor;
-    border-radius: 8px;
-    font-weight: 600;
-    color: #131313;
-    transition: border $animationTransition;
+  width: 62px;
+  height: 24px;
+  background-color: transparent;
+  border: 2px solid $secondBlockColor;
+  border-radius: 8px;
+  font-weight: 600;
+  color: #131313;
+  transition: border $animationTransition;
 
-    &:hover{
-      border-color: $hoverBtn;
-    }
+  &:hover {
+    border-color: $hoverBtn;
+  }
 
-    &:disabled {
-      border-color: $colorTime;
-    }
-  
-    &:focus { border-color: $hoverBtn;
+  &:disabled {
+    border-color: $colorTime;
+  }
+
+  &:focus {
+    border-color: $hoverBtn;
     color: $MainbackgroundColor;
   }
 }
 
 .about-link {
-    width: 83px;
-    height: 24px;
-    background-color: transparent;
-    border: 0;
-    color: $secondBlockColor;
-    text-decoration: underline;
-    transition: color $animationTransition;
+  width: 83px;
+  height: 24px;
+  background-color: transparent;
+  border: 0;
+  color: $secondBlockColor;
+  text-decoration: underline;
+  transition: color $animationTransition;
 
-    &:hover {
+  &:hover {
     color: $hoverBtn;
   }
 
-    &:focus {
+  &:focus {
     color: $MainbackgroundColor;
   }
 
-    &:disabled {
+  &:disabled {
     color: $colorTime;
   }
 }
@@ -115,4 +186,277 @@ header {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+// Tablet
+
+.header-btn {
+  background-color: $secondBlockColor;
+  border: 0;
+  border-radius: 10px;
+  width: 152px;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.21;
+
+  &:hover {
+    background-color: $hoverBtn;
+  }
+  &:focus {
+    background-color: $hoverBtn;
+    color: $MainbackgroundColor;
+  }
+  &:disabled {
+    background-color: $colorTime;
+  }
+  transition: color $animationTransition, background-color $animationTransition;
+
+  &::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    margin-left: 7px;
+    background-image: url('../images/test-strelka.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &:focus::after {
+    background-image: url('../images/test-strelka-white.png');
+  }
+}
+
+.hero__info {
+  margin-left: 27%;
+}
+
+.hero__text {
+  width: 151px;
+  height: 85px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: $MainbackgroundColor;
+}
+
+.hero__arrow {
+  background-color: transparent;
+  border: 0;
+  width: 40px;
+  padding: 0;
+}
+
+.hero__location--list {
+  position: absolute;
+  top: 0px;
+  right: 32;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.hero__location--item {
+  font-size: 28px;
+  line-height: 1.21;
+  font-weight: 900;
+
+  text-transform: uppercase;
+  text-align: end;
+}
+
+.hero__location--place {
+  color: $MainbackgroundColor;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-top: 4px;
+  text-align: end;
+}
+
+.cafes {
+  width: 35px;
+  margin-bottom: 20px;
+}
+
+.food-truck {
+  width: 46px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-btn {
+    display: none;
+  }
+  .hero__text {
+    display: none;
+  }
+  .hero__arrow {
+    display: none;
+  }
+  .hero__location--list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    z-index: 10;
+  }
+
+  .ice-cream {
+    display: none;
+  }
+
+  .burger-wrapper {
+    display: flex;
+    gap: 30px;
+  }
+
+  .hero {
+    position: static;
+    min-height: 415px;
+    padding-bottom: 10px;
+    background-image: url('../images/ice-cream-tablet-1x.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+
+  .hero .container {
+    position: relative;
+  }
+
+  .hero__title {
+    font-size: 18px;
+    margin-top: 84px;
+  }
+
+  .hero__button--list {
+    margin-bottom: 56px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2) and (min-width: 768px) {
+  .hero {
+    background-image: url('../images/ice-cream-tablet@2x.png');
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .site-nav__list {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    @include flexCentral;
+  }
+
+  .site-nav__list {
+    display: flex;
+    gap: 27px;
+    margin-top: 39px;
+    margin-left: 269px;
+  }
+
+  .site-nav__link {
+    font-weight: 700;
+    font-size: 16px;
+    color: $MainbackgroundColor;
+
+    &:hover,
+    &:focus {
+      color: $secondBlockColor;
+    }
+
+    transition: color $animationTransition;
+
+    @include font(16px, 20px);
+  }
+
+  .header-btn {
+    margin-top: 28px;
+  }
+
+  .logo {
+    margin-top: 8px;
+  }
+
+  .hero {
+    min-height: 664px;
+    background-image: url('../images/ice-cream-desktop-1x.png');
+  }
+
+  .hero__title {
+    font-size: 38px;
+    margin-top: 98px;
+    @include font(38px, 48px);
+  }
+
+  .hero__button--link {
+    font-size: 14px;
+    @include font(14px, 17px);
+  }
+
+  .products-link {
+    width: 134px;
+    height: 42px;
+  }
+
+  .about-link {
+    width: 154px;
+    height: 40px;
+  }
+
+  .hero__location--item {
+    font-size: 46px;
+
+    @include font(46px, 56px);
+  }
+
+  .hero__location--place {
+    font-size: 14px;
+    @include font(14px, 17px);
+  }
+  .food-truck {
+    width: 79px;
+  }
+
+  .hero__location--list {
+    top: 20px;
+    right: 16px;
+  }
+
+  .hero__text {
+    font-size: 14px;
+    width: 200px;
+  }
+
+  .hero__info {
+    margin-left: 20.5%;
+    margin-top: 9%;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2) and (min-width: 1200px) {
+  .hero {
+    background-image: url('../images/ice-cream-desktop@2x.png');
+  }
+}
+
+.hero__button--list {
+  margin-bottom: 56px;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2) and (min-width: 768px) {
+  .hero {
+    background-image: url('../images/ice-cream-tablet@2x.png');
+  }
 }

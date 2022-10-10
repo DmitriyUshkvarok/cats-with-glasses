@@ -10,6 +10,7 @@
 @import './utils/global-styles';
 // hero - header
 @import './components/hero-header';
+@import './components/mobile-menu';
 // products
 @import './components/products';
 // about
@@ -40,3 +41,6 @@
 @import './components/title-site';
 // buttons
 @import './components/buttons';
+// scroll button
+@import './components/scroll-btn';
+
