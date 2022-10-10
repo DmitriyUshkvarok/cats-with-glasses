@@ -154,8 +154,11 @@
   .day-work,
   .day-off,
   .time-work,
-  .time-day-off {
+  .time-day-off,
+  .tel-number,
+  .email {
     font-size: 14px;
+    line-height: 26px;
   }
 
   .contact-btn-list {
@@ -193,7 +196,10 @@
   .day-work,
   .day-off,
   .time-work,
-  .time-day-off {
-    font-size: 15px;
+  .time-day-off,
+  .tel-number,
+  .email {
+    font-size: 16px;
+    line-height: 26px;
   }
 }
