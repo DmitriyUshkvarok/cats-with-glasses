@@ -3,7 +3,7 @@ header {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 15;
+  // z-index: 20;
 }
 
 .header__container {
@@ -17,18 +17,89 @@ header {
   display: block;
 }
 
-.mobile-menu-btn-open {
-  height: 32px;
-  background-color: transparent;
-  border: 0;
-  padding: 0;
-  margin-top: 16px;
+.site-nav {
+  position: relative;
+  z-index: 30;
 }
 
-.mobile-menu-open-icon {
-  fill: $MainbackgroundColor;
-  width: 32px;
-  height: 32px;
+.burger-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger-menu {
+  display: none;
+  position: relative;
+  width: 24px;
+  height: 16px;
+  font-size: 0;
+  z-index: 40;
+}
+
+.burger-menu::before,
+.burger-menu::after {
+  content: '';
+  background-color: $MainbackgroundColor;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  transition: $animationTransition;
+}
+
+.burger-menu::before {
+  top: 0px;
+}
+
+.burger-menu::after {
+  bottom: 0;
+}
+
+.burger-menu .burger-menu__item {
+  background-color: $MainbackgroundColor;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 40%;
+}
+
+.burger-menu.is-open::before {
+  background-color: $MainbackgroundColor;
+  transform: rotate(-45deg);
+  top: 8px;
+  transition: $animationTransition;
+}
+
+.burger-menu.is-open::after {
+  background-color: $MainbackgroundColor;
+  transform: rotate(45deg);
+  bottom: 5px;
+}
+
+.burger-menu.is-open .burger-menu__item {
+  transform: scale(0);
+}
+
+@media (min-width: 200px) {
+  .burger-menu {
+    display: block;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+@media (min-width: 1200px) {
+  .burger-menu {
+    display: none;
+  }
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hero {
@@ -121,18 +192,15 @@ header {
 // Tablet
 
 .header-btn {
-  margin-top: 24px;
-  margin-left: 32px;
-
   background-color: $secondBlockColor;
   border: 0;
   border-radius: 10px;
   width: 152px;
   height: 42px;
-
   font-size: 14px;
   font-weight: 600;
   line-height: 1.21;
+
   &:hover {
     background-color: $hoverBtn;
   }
@@ -158,8 +226,6 @@ header {
   &:focus::after {
     background-image: url('../images/test-strelka-white.png');
   }
-
-  @include flexCentral();
 }
 
 .hero__info {
@@ -234,17 +300,17 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .site-nav {
+    z-index: 10;
+  }
+
   .ice-cream {
     display: none;
   }
 
-  .mobile-menu-btn-open {
-    margin-top: 29px;
-    margin-left: auto;
-  }
-
-  .header__container {
-    justify-content: flex-start;
+  .burger-wrapper {
+    display: flex;
+    gap: 30px;
   }
 
   .hero {
@@ -263,149 +329,133 @@ header {
     margin-top: 84px;
   }
 
-.hero__button--list{
-  margin-bottom: 56px;
-}  
+  .hero__button--list {
+    margin-bottom: 56px;
+  }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (max-width:767px), 
-           (min-resolution: 192dpi) and (max-width:767px) , 
-           (min-resolution: 2) and (max-width:767px) {
-            .hero {
-              background-image: url('../images/ice-cream-mobile@2x.png');
-            }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2) and (min-width: 768px) {
+  .hero {
+    background-image: url('../images/ice-cream-tablet@2x.png');
+  }
 }
 
-@media screen and (min-device-pixel-ratio: 2) and (min-width:768px), 
-           (min-resolution: 192dpi) and (min-width:768px) , 
-           (min-resolution: 2) and (min-width:768px) {
-            .hero {
-              background-image: url('../images/ice-cream-tablet@2x.png');
-            }
-}
-
-@media screen and (max-width:1199px) {
+@media screen and (max-width: 1199px) {
   .site-nav__list {
     display: none;
   }
 }
 
-@media screen and (min-width:1200px) {
-  .mobile-menu-btn-open {
-    display: none;
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    @include flexCentral;
+  }
+
+  .site-nav__list {
+    display: flex;
+    gap: 27px;
+    margin-top: 39px;
+    margin-left: 269px;
+  }
+
+  .site-nav__link {
+    font-weight: 700;
+    font-size: 16px;
+    color: $MainbackgroundColor;
+
+    &:hover,
+    &:focus {
+      color: $secondBlockColor;
+    }
+
+    transition: color $animationTransition;
+
+    @include font(16px, 20px);
   }
 
   .header-btn {
-    margin-left: 0;
-  }
-        
- .header__container {
-  justify-content: space-between;
- }
-
- .site-nav {
-  @include flexCentral
- }
-
- .site-nav__list {
-  display: flex;
-  gap: 27px;
-  margin-top: 39px;
-  margin-left: 269px;
- }
-
- .site-nav__link {
-  font-weight: 700;
-  font-size: 16px;
-  color: $MainbackgroundColor;
-
-  &:hover , &:focus {
-    color: $secondBlockColor;
+    margin-top: 28px;
   }
 
-  transition: color $animationTransition;
-  
-  @include font(16px,20px)
- }
-
- .header-btn {
-  margin-top: 28px;
- }
-
- .logo {
-  margin-top: 8px;
- }
-
- .hero {
-  min-height: 664px;
-  background-image: url('../images/ice-cream-desktop-1x.png');
-}
-
-.hero__title {
-  font-size: 38px;
-  margin-top: 98px;
-  @include font(38px,48px)
-}
-
-.hero__button--link {
-  font-size: 14px;
-@include font(14px,17px)
-}
-
-.products-link {
-  width: 134px;
-  height: 42px;
-}
-
-.about-link {
-  width: 154px;
-  height: 40px;
-}
-
-.hero__location--item {
-  font-size: 46px;
-
-@include font(46px,56px)
-}
-
-.hero__location--place {
-  font-size: 14px;
-  @include font(14px,17px)
-}
-.food-truck {
-  width: 79px;
-}
-
-.hero__location--list {
-  top: 20px;
-  right: 16px;
-}
-
-.hero__text {
-  font-size: 14px;
-  width: 200px;
-}
-
-.hero__info{
-  margin-left: 20.5%;
-  margin-top: 9%;
-}
-}
-
-@media screen and (min-device-pixel-ratio: 2) and (min-width:1200px), 
-          (min-resolution: 192dpi) and (min-width:1200px) , 
-          (min-resolution: 2) and (min-width:1200px) {
-           .hero {
-             background-image: url('../images/ice-cream-desktop@2x.png');
-           }
-}
-
-
-
-  .hero__button--list {
-    margin-bottom: 56px;
+  .logo {
+    margin-top: 8px;
   }
 
+  .hero {
+    min-height: 664px;
+    background-image: url('../images/ice-cream-desktop-1x.png');
+  }
+
+  .hero__title {
+    font-size: 38px;
+    margin-top: 98px;
+    @include font(38px, 48px);
+  }
+
+  .hero__button--link {
+    font-size: 14px;
+    @include font(14px, 17px);
+  }
+
+  .products-link {
+    width: 134px;
+    height: 42px;
+  }
+
+  .about-link {
+    width: 154px;
+    height: 40px;
+  }
+
+  .hero__location--item {
+    font-size: 46px;
+
+    @include font(46px, 56px);
+  }
+
+  .hero__location--place {
+    font-size: 14px;
+    @include font(14px, 17px);
+  }
+  .food-truck {
+    width: 79px;
+  }
+
+  .hero__location--list {
+    top: 20px;
+    right: 16px;
+  }
+
+  .hero__text {
+    font-size: 14px;
+    width: 200px;
+  }
+
+  .hero__info {
+    margin-left: 20.5%;
+    margin-top: 9%;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px),
+  (min-resolution: 2) and (min-width: 1200px) {
+  .hero {
+    background-image: url('../images/ice-cream-desktop@2x.png');
+  }
+}
+
+.hero__button--list {
+  margin-bottom: 56px;
 
 
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2) and (min-width: 768px) {
+  .hero {
+    background-image: url('../images/ice-cream-tablet@2x.png');
+  }
+}
