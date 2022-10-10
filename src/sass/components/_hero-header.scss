@@ -105,9 +105,9 @@ header {
 .hero {
   position: relative;
   padding-top: 20px;
+  background-image: url('../../images/');
   background-color: $firstBlockColor;
   min-height: 510px;
-
   background-image: url('../images/ice-cream-mobile-1x.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -316,6 +316,9 @@ header {
     min-height: 415px;
     padding-bottom: 10px;
     background-image: url('../images/ice-cream-tablet-1x.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
   }
 
   .hero .container {

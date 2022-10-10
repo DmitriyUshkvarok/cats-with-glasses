@@ -28,31 +28,28 @@ img {
   padding-left: 16px;
   padding-right: 16px;
 }
-  @media screen and (min-width: 480px) {
-    .container {
-      width: 480px;
-    }
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
   }
+}
 
-  @media screen and (min-width: 768px) {
-    .container {
-      width: 768px;
-
-      padding-left: 32px;
-      padding-right: 32px;
-
-    }
-
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
+}
 
-  @media screen and (min-width: 1200px) {
-    .container {
-      width: 1200px;
-      padding-left: 16px;
-      padding-right: 16px;
-    }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
-
+}
 
 html {
   scroll-behavior: smooth;
@@ -111,15 +108,10 @@ body {
 @media screen and (min-width: 768px) {
   .modal {
     width: 568px;
-
-  } 
+  }
 }
 .list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-
-  
-
-
