@@ -45,7 +45,7 @@ header {
   width: 100%;
   height: 3px;
   left: 0;
-  transition: $animationTransition;
+  transition: fill $animationTransition;
 }
 
 .burger-menu::before {
@@ -69,7 +69,7 @@ header {
   background-color: $MainbackgroundColor;
   transform: rotate(-45deg);
   top: 8px;
-  transition: $animationTransition;
+  transition: fill $animationTransition;
 }
 
 .burger-menu.is-open::after {
