@@ -105,9 +105,9 @@ header {
 .hero {
   position: relative;
   padding-top: 20px;
+  background-image: url('../../images/');
   background-color: $firstBlockColor;
   min-height: 510px;
-
   background-image: url('../images/ice-cream-mobile-1x.png');
   background-repeat: no-repeat;
   background-size: contain;
@@ -185,6 +185,12 @@ header {
   &:disabled {
     color: $colorTime;
   }
+}
+
+.ice-cream {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 // Tablet
@@ -316,6 +322,9 @@ header {
     min-height: 415px;
     padding-bottom: 10px;
     background-image: url('../images/ice-cream-tablet-1x.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
   }
 
   .hero .container {
@@ -447,12 +456,12 @@ header {
 
 .hero__button--list {
   margin-bottom: 56px;
+}
 
-  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-    (min-resolution: 192dpi) and (min-width: 768px),
-    (min-resolution: 2) and (min-width: 768px) {
-    .hero {
-      background-image: url('../images/ice-cream-tablet@2x.png');
-    }
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  (min-resolution: 192dpi) and (min-width: 768px),
+  (min-resolution: 2) and (min-width: 768px) {
+  .hero {
+    background-image: url('../images/ice-cream-tablet@2x.png');
   }
 }
