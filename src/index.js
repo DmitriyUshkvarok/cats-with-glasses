@@ -11,3 +11,4 @@ import './js/product-modal-three';
 import './js/fancybox';
 import './js/hidden-panel';
 import './js/buy-now-modal';
+import './js/by-now-mobile-menu';
