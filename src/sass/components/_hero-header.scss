@@ -111,6 +111,12 @@ header {
   background-size: contain;
   background-position: bottom;
 
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2) {
+    background-image: url('../images/ice-cream-mobile@2x.png');
+  }
+
   &__title {
     letter-spacing: 0.04em;
     text-transform: uppercase;
