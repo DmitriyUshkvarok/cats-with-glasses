@@ -58,3 +58,9 @@
     display: none;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .mobile-menu, .mobile-menu.is-open {
+    display: none;
+  }
+}
