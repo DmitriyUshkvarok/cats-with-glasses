@@ -1,0 +1,95 @@
+.buy-now-list {
+    margin-top: 86px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 84px;
+}
+
+.buy-now-item {
+    position: relative;
+    width: 132px;
+    border-radius: 15.7808px;
+    padding-top: 86px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.buy-now-title {
+    font-weight: 700;
+    @include font (16px, 20px);
+    font-family: $siteSerif;
+    color: $firstColor;
+    letter-spacing: 0.04em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.buy-now-title::before {
+    content: '';
+    display: inline-block;
+    width: 132px;
+    height: 139px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.buy-now-item__one {
+    border: 2px solid $oneColorProduct;
+    transition: background-color $animationTransition;
+    .buy-now__checked:checked+& {
+        background-color: $oneColorProduct;
+    }
+}
+
+.buy-now-title__one::before {
+    background-image: url(../images/buy-now-ice-cream.png);
+    box-shadow: 0px 5px 20px rgba(10, 136, 23, 0.25);
+    background-color: $oneColorProduct;
+}
+
+.buy-now-item__two {
+    border: 2px solid $twoColorProduct;
+    transition: background-color $animationTransition;
+
+    .buy-now__checked:checked+& {
+        background-color: $twoColorProduct;
+    }
+}
+
+.buy-now-title__two::before {
+    background-image: url(../images/buy-now-ice-coffee.png);
+    box-shadow: 0px 5px 20px rgba(153, 114, 23, 0.25);
+    background-color: $twoColorProduct;
+}
+
+.buy-now-item__three {
+    border: 2px solid $threeColorProduct;
+    transition: background-color $animationTransition;
+    .buy-now__checked:checked+& {
+        background-color: $threeColorProduct;
+    }
+}
+
+.buy-now-title__three::before {
+    background-image: url(../images/buy-now-milkshake.png);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+    background-color: $threeColorProduct;
+}
+
+@media screen and (min-width: 768px) {
+    .buy-now-list {
+        margin-top: 106px;
+        margin-bottom: 40px;
+        gap: 32px;
+        flex-direction: initial;
+    }
+
+
+}

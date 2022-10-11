@@ -1,10 +1,50 @@
-<!-- <div class="backdrop ">
+<div class="backdrop ">
     <div class="modal modal__address">
         <button type="button" class="modal-close-btn">
             <svg class="close-icon">
                 <use href="./images/sprite.svg#close-btn"></use>
             </svg>
         </button>
+        <p class="modal-title">Buy now</p>
+
+        <form class="buy-now-list">
+            <label>
+                <input type="checkbox" name="products" value="ice-cream" class="buy-now__checked visually-hidden">
+                <div class="buy-now-item buy-now-item__one">
+                    <div class="buy-now-title buy-now-title__one">ice cream</div>
+                </div>
+            </label>
+            <label>
+                <input type="checkbox" name="products" value="ice-coffee" class="buy-now__checked visually-hidden">
+                <div class="buy-now-item buy-now-item__two">
+                    <div class="buy-now-title buy-now-title__two">ice coffee</div>
+                </div>
+            </label>
+            <label>
+                <input type="checkbox" name="products" value="milkshake" class="buy-now__checked visually-hidden">
+                <div class="buy-now-item buy-now-item__three">
+                    <div class="buy-now-title buy-now-title__three">milkshakes</div>
+                </div>
+            </label>
+        </form>
+
+        <div class="modal-form-wrapper">
+            <form class="modal-form">
+                <label class="modal-form__label">
+                    <input class="modal-form__input" type="text" pattern="[a-zA-Za-яА-ЯіІїЇ]+" autofocus required
+                        placeholder="Name" name="user-name" />
+                </label>
+                <label class="modal-form__label">
+                    <input placeholder="Phone" class="modal-form__input" type="tel" required
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" name="user-phone" />
+                </label>
+        
+                <label class="modal-form__label modal__form-field-message">
+                    <textarea class="modal-form__comment" placeholder="Comment" name="comment"></textarea>
+                </label>
+            </form>
+            <button type="submit" class="modal-button">Submit</button>
+        </div>
 
     </div>
-</div> -->
+</div>
