@@ -124,3 +124,7 @@
   background-color: $firstBlockColor;
   margin: 0 9px;
 }
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: url(../images/cursor-pointer.svg), auto;
+}

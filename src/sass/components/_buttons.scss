@@ -1,7 +1,6 @@
 .button {
     border: none;
     border-radius: 10px;
-    cursor: pointer;
     color: $firstColor;
     background-color: $secondBlockColor;
     padding: 12px 34px;
@@ -28,7 +27,6 @@
 .button-contour {
     border: 2px solid $secondBlockColor;
     border-radius: 10px;
-    cursor: pointer;
     color: $firstColor;
     font-weight: 600;
     @include font (14px, 18px);
@@ -46,7 +44,6 @@
     text-align: center;
     border: 2px solid $secondBlockColor;
     border-radius: 8px;
-    cursor: pointer;
     color: $firstColor;
     font-weight: 600;
     @include font (8px, 10px);
@@ -73,7 +70,6 @@
     font-weight: 600;
     @include font (8px, 10px);
     text-decoration-line: underline;
-    cursor: pointer;
     border: none;
     color: $secondBlockColor;
     background-color: transparent;
@@ -134,7 +130,6 @@
     right: 8px;
     background-color: transparent;
     border: 0;
-    cursor: pointer;
     padding: 0;
     width: 16px;
     height: 16px;
