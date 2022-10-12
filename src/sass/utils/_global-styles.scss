@@ -110,6 +110,33 @@ body.modal-open {
   opacity: 1;
 }
 
+// .popup {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 100%;
+//   padding: 2rem;
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   visibility: hidden;
+//   opacity: 0;
+//   transition: all 0.3s ease;
+//   z-index: 500;
+
+//   .modal-backdrop {
+//     background: rgba(#000, 0.7);
+//     height: 100%;
+//     width: 100%;
+//     position: fixed;
+//   }
+
+//   &.visible {
+//     opacity: 1;
+//     visibility: visible;
+//   }
+// }
+
 @media screen and (min-width: 320px) {
   .modal {
     width: 280px;
