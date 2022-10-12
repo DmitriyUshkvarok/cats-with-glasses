@@ -57,7 +57,7 @@
   width: 30px;
   height: 30px;
   fill: currentColor;
-  cursor: pointer;
+  cursor: url(../images/cursor-pointer.svg), auto;
   background-color: transparent;
   transition: color $animationTransition, border $animationTransition;
 

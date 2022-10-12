@@ -1,3 +1,7 @@
+body {
+  cursor: url(../images/cursor.svg), auto;
+}
+
 ul {
   list-style: none;
   margin: 0;
@@ -6,6 +10,11 @@ ul {
 
 a {
   text-decoration: none;
+  cursor: url(../images/cursor-pointer.svg), auto;
+}
+
+label, button, iframe {
+  cursor: url(../images/cursor-pointer.svg), auto;
 }
 
 h1,
