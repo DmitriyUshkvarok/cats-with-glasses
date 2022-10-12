@@ -1,7 +1,10 @@
 <div class="backdrop is-hidden" data-product-modal-three>
   <div class="modal modal__address">
-    <button type="button" class="modal-close-btn"
-      data-product-modal-three-close>
+    <button
+      type="button"
+      class="modal-close-btn"
+      data-product-modal-three-close
+    >
       <svg class="close-icon">
         <use href="./images/sprite.svg#close-btn"></use>
       </svg>
@@ -11,16 +14,16 @@
       <source
         srcset="./images/ch-icecr.jpg 1x, ./images/ch-icecr@2x.jpg 2x"
         media="(max-width:767px)"
-        />
+      />
       <source
         srcset="./images/ch-icecr.jpg 1x, ./images/ch-icecr@2x.jpg 2x"
         media="(min-width:768px)"
-        />
+      />
       <img
         class="modal__image"
         src="./images/ch-icecr.jpg"
         alt="Chololate icecream"
-        />
+      />
     </picture>
 
     <ul class="modal__list">
@@ -37,7 +40,7 @@
           <div class="item__element-part">
             <p class="element-part-text">4g</p>
           </div>
-          <p class="element-part-name">Prote...</p>
+          <p class="element-part-name">Proteins</p>
         </div>
       </li>
       <li class="modal__list_item">
@@ -88,20 +91,34 @@
     <div class="modal-form-wrapper">
       <form class="modal-form">
         <label class="modal-form__label">
-          <input class="modal-form__input" type="text"
-            pattern="[a-zA-Za-яА-ЯіІїЇ]+" autofocus required placeholder="Name"
-            name="user-name" />
+          <input
+            class="modal-form__input"
+            type="text"
+            pattern="[a-zA-Za-яА-ЯіІїЇ]+"
+            autofocus
+            required
+            placeholder="Name"
+            name="user-name"
+          />
         </label>
         <label class="modal-form__label">
-          <input placeholder="Phone" class="modal-form__input" type="tel"
+          <input
+            placeholder="Phone"
+            class="modal-form__input"
+            type="tel"
             required
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx"
-            name="user-phone" />
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            title="xxx-xxx-xx-xx"
+            name="user-phone"
+          />
         </label>
 
         <label class="modal-form__label modal__form-field-message">
-          <textarea class="modal-form__comment" placeholder="Comment"
-            name="comment"></textarea>
+          <textarea
+            class="modal-form__comment"
+            placeholder="Comment"
+            name="comment"
+          ></textarea>
         </label>
       </form>
       <button type="submit" class="modal-button">Submit</button>
