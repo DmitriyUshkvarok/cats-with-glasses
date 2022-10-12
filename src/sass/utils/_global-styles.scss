@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  top: 0 !important;
   width: 100%;
   background-image: url('../images/ice-cream-fon\ 2.png');
   background-repeat: no-repeat;
@@ -20,6 +21,15 @@ body {
 
 body.modal-open {
   overflow: hidden;
+}
+
+.skiptranslate {
+  display: none;
+  height: 0;
+}
+
+.language__img {
+  cursor: pointer;
 }
 
 ul {
