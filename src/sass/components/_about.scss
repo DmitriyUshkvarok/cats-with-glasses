@@ -90,7 +90,7 @@
   .about__circles {
     width: 334px;
     height: 330px;
-
+    margin-right: 32px;
     & img {
       width: 334px;
       height: 330px;
@@ -104,6 +104,7 @@
 
   .page-title {
     font-size: 34px;
+    padding-bottom: 72px;
   }
 
   .page-sup-title {
