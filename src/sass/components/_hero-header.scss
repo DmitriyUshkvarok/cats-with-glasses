@@ -194,10 +194,11 @@ header {
 
 .language {
   display: flex;
-  gap: 5px;
+  flex-direction: column;
+  gap: 7px;
   position: absolute;
   bottom: 10px;
-  right: 0;
+  right: 15px;
 }
 
 // Tablet
@@ -401,6 +402,7 @@ header {
 
   .hero {
     background-image: url('../images/ice-cream-desktop-1x.png');
+    min-height: 664px;
   }
 
   .hero__title {
