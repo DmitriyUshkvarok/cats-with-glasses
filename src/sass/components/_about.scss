@@ -16,7 +16,6 @@
 }
 
 .page-title {
-  font-size: 30px;
   text-align: center;
   padding-bottom: 32px;
 }
@@ -73,6 +72,10 @@
 }
 
 @media screen and (min-width: 768px) {
+  .page-title {
+    font-size: 34px;
+  }
+
   .about__info {
     display: flex;
     padding-bottom: 48px;
