@@ -14,6 +14,7 @@
   transform: translateX(-100%);
 }
 
+
 .mobile-menu.is-open {
   transform: translateX(0);
 }
@@ -22,6 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   gap: 30px;
   margin-top: 80px;
   margin-bottom: 111px;
@@ -38,11 +40,19 @@
   color: $firstColor;
 }
 
+
+
 @media (min-width: 768px) {
+
+  .mobile-menu {
+      width: 100%;
+      height: 100%;
+    }
   .mob-menu-list {
+    align-items: center;
+    display: flex;
     gap: 40px;
     margin-top: 100px;
-    align-items: flex-start;
   }
 
   .mob-list__link {
@@ -50,9 +60,7 @@
     color: $MainbackgroundColor;
   }
 
-  .mobile-menu.is-open {
-    transform: translateX(-24%);
-  }
+ 
 
   .mobile-btn {
     display: none;
