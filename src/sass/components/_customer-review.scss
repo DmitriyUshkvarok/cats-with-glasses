@@ -31,13 +31,16 @@
 .feedback__wrapper {
   background: $firstBlockColor;
   border-radius: 10px;
-  padding: 34px 39px;
+  padding: 34px 40px;
   margin-top: 32px;
+  height: 150px;
 
   @media screen and (min-width: 768px) {
     margin: 28px auto 0;
-    padding: 28px 80px;
+    padding: 34px 80px;
     width: 705px;
+    height: 130px;
+  
   }
 
   @media screen and (min-width: 1200px) {
