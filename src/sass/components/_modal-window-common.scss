@@ -1,3 +1,10 @@
+.modal-title {
+  font-family: 'Seymour One';
+  @include font(16px, 24px);
+  color: $firstColor;
+  text-align: center;
+}
+
 .modal-desc {
   color: $firstColor;
   @include font(14px, 20px);
@@ -9,7 +16,7 @@
   text-align: center;
 }
 
-.modal-form {
+.modal-form__field {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -54,7 +61,7 @@
     margin-bottom: 32px;
   }
 
-  .modal-form {
+  .modal-form__field {
     gap: 16px;
   }
 

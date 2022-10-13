@@ -1,9 +1,15 @@
 <!-- About modal -->
 <div class="backdrop is-hidden" data-about-modal>
-  <div class="modal about-modal">
+  <div class="modal small-modal about-modal">
+    <button type="button" class="modal-close-btn" data-about-modal-close>
+      <svg class="close-icon">
+        <use href="./images/sprite.svg#close-btn"></use>
+      </svg>
+    </button>
     <span class="about-modal__title">How it's made?</span>
     <div class="about-modal__video">
       <iframe
+        style="border:0; border-radius: 10px;"
         width="100%"
         height="100%"
         src="https://www.youtube.com/embed/hO-7cz7gyAY"
@@ -19,11 +25,5 @@
       tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
       adipiscing elit, sed do eiusmod tempor incididunt ut labore et
     </p>
-
-    <button class="close-btn" data-about-modal-close>
-      <svg width="16" height="16">
-        <use href="./images/sprite.svg#close-btn"></use>
-      </svg>
-    </button>
   </div>
 </div>

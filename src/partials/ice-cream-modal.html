@@ -1,5 +1,5 @@
 <div class="backdrop is-hidden" data-product-modal>
-  <div class="modal modal__address">
+  <div class="modal big-modal">
     <button type="button" class="modal-close-btn close-modal"
       data-product-modal-close>
       <svg class="close-icon">
@@ -87,26 +87,21 @@
     </ul>
     <div class="modal-form-wrapper">
       <form class="modal-form">
-        <label class="modal-form__label">
-          <input class="modal-form__input" type="text"
-            pattern="[a-zA-Za-яА-ЯіІїЇ]+" autofocus required
-            placeholder="Name"
-            name="user-name" />
-        </label>
-        <label class="modal-form__label">
-          <input placeholder="Phone" class="modal-form__input" type="tel"
-            required
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            title="xxx-xxx-xx-xx"
-            name="user-phone" />
-        </label>
-
-        <label class="modal-form__label modal__form-field-message">
-          <textarea class="modal-form__comment" placeholder="Comment"
-            name="comment"></textarea>
-        </label>
+        <div class="modal-form__field">
+          <label class="modal-form__label">
+            <input class="modal-form__input" type="text" pattern="[a-zA-Za-яА-ЯіІїЇ]+" autofocus required placeholder="Name"
+              name="user-name" />
+          </label>
+          <label class="modal-form__label">
+            <input placeholder="Phone" class="modal-form__input" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+              title="xxx-xxx-xx-xx" name="user-phone" />
+          </label>
+          <label class="modal-form__label modal__form-field-message">
+            <textarea class="modal-form__comment" placeholder="Comment" name="comment"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="modal-button">Submit</button>
       </form>
-      <button type="submit" class="modal-button">Submit</button>
     </div>
   </div>
 </div>
