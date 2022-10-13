@@ -1,4 +1,4 @@
-.page-sup-title-dark{
+.page-sup-title-dark {
   font-family: $siteSerif;
   font-weight: 800;
   font-size: 18px;
@@ -7,9 +7,9 @@
   color: $firstColor;
 }
 
-.page-title-dark{
+.page-title-dark {
   font-family: 'Seymour One';
-  font-size: 30px;
+  font-size: 29px;
   line-height: 1.26;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -26,8 +26,8 @@
 }
 
 .page-title {
+  font-size: 30px;
   font-family: 'Seymour One';
-  font-size: 34px;
   line-height: 1.26;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -35,21 +35,21 @@
 }
 
 @media screen and(min-width: 768px) {
-  .page-sup-title-dark{
-      font-size: 22px;
+  .page-sup-title-dark {
+    font-size: 22px;
   }
-  .page-title-dark{
-      font-size: 34px;
-      margin-bottom: 200px;
-    }
+  .page-title-dark {
+    font-size: 34px;
+    margin-bottom: 200px;
   }
+}
 
-  @media screen and(min-width: 1200px) {
-    .page-sup-title-dark{
-        font-size: 30px;
-    }
-    .page-title-dark{
-        font-size: 36px;
-        margin-bottom: 303px;
-    }  
-  }  
+@media screen and(min-width: 1200px) {
+  .page-sup-title-dark {
+    font-size: 30px;
+  }
+  .page-title-dark {
+    font-size: 36px;
+    margin-bottom: 303px;
+  }
+}

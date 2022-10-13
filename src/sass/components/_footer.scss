@@ -161,13 +161,24 @@
 }
 
 .footer-copyright {
-  border-top: 1px solid $MainbackgroundColor;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   padding-bottom: 62px;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 13px;
+  }
+
+  &::before {
+    content: ' ';
+    border-top: 1px solid $MainbackgroundColor;
+    width: 100%;
+
+    @media screen and (min-width: 1200px) {
+      width: calc(100% - 32px);
+    }
   }
 
   &__item {
