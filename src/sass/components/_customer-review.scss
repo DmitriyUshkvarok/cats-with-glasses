@@ -30,20 +30,30 @@
 
 .feedback__wrapper {
   background: $firstBlockColor;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  overflow-y: scroll;
   border-radius: 10px;
   padding: 34px 39px;
   margin-top: 32px;
+  height: 280px;
 
   @media screen and (min-width: 768px) {
     margin: 28px auto 0;
-    padding: 28px 80px;
+    padding: 34px 50px;
     width: 705px;
+    height: 138px;
+    border-radius: 24px;
+    overflow-y: hidden;
+  
   }
 
   @media screen and (min-width: 1200px) {
     margin-top: 32px;
     padding: 39px 109px;
     width: 968px;
+    overflow-y: hidden;
   }
 }
 
