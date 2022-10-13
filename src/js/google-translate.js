@@ -3,7 +3,7 @@ const googleTranslateConfig = {
   lang: 'en',
   /* The language we translate into on the first visit*/
   /* Язык, на который переводим при первом посещении */
-  langFirstVisit: 'ru',
+  langFirstVisit: 'en',
   /* Если скрипт не работает на поддомене, 
     раскомментируйте и
     укажите основной домен в свойстве domain */
