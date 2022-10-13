@@ -8,6 +8,7 @@
   @media screen and (min-width: 768px) {
     padding: 32px 60px;
   }
+  
   &__title {
     display: flex;
     justify-content: center;
@@ -43,33 +44,5 @@
       font-size: 16px;
       line-height: 1.4;
     }
-  }
-}
-
-.close-btn {
-  position: absolute;
-  border: none;
-  top: 8px;
-  right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  fill: currentColor;
-  background-color: transparent;
-  transition: color $animationTransition, border $animationTransition;
-
-  &:hover,
-  &:focus {
-    color: $hoverBtn;
-    transition: color $animationTransition;
-  }
-
-  &:focus {
-    outline: none;
-    border: 1px solid $hoverBtn;
-    border-radius: 50%;
-    transition: border $animationTransition;
   }
 }
