@@ -192,6 +192,15 @@ header {
   }
 }
 
+.language {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
 // Tablet
 
 .hero__info {
@@ -392,8 +401,8 @@ header {
   }
 
   .hero {
-    min-height: 664px;
     background-image: url('../images/ice-cream-desktop-1x.png');
+    min-height: 664px;
   }
 
   .hero__title {

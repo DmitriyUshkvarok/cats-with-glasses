@@ -12,4 +12,4 @@ import './js/fancybox';
 import './js/hidden-panel';
 import './js/buy-now-modal';
 import './js/by-now-mobile-menu';
-import './js/anchor-scroll';
+import './js/scroll-smooth';

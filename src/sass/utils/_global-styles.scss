@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  top: 0 !important;
   width: 100%;
   background-image: url('../images/ice-cream-fon\ 2.png');
   background-repeat: no-repeat;
@@ -20,6 +21,15 @@ body {
 
 body.modal-open {
   overflow: hidden;
+}
+
+.skiptranslate {
+  display: none;
+  height: 0;
+}
+
+.language__img {
+  cursor: pointer;
 }
 
 ul {
@@ -105,9 +115,7 @@ img {
 .modal {
   position: absolute;
   top: 20px;
-  // top: 50%;
   left: 50%;
-  // transform: translate(-50%, -50%) scale(1);
   transform: translateX(-50%);
   background-color: $MainbackgroundColor;
   border: 2px solid $secondBlockColor;
@@ -117,6 +125,12 @@ img {
   transition: transform $animationTransition;
   opacity: 1;
   z-index: 1000;
+  padding: 28px 30px;
+}
+
+.small-modal {
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media screen and (min-width: 320px) {
@@ -127,7 +141,15 @@ img {
 
 @media screen and (min-width: 768px) {
   .modal {
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 568px;
+    padding: 32px 60px;
+  }
+
+  .big-modal {
+    top: 20px;
+    transform: translateX(-50%);
   }
 }
 .list {
