@@ -124,9 +124,10 @@ header {
     color: $MainbackgroundColor;
     margin-bottom: 32px;
     margin-top: 90px;
-    font-family: Seymour One;
+    font-family: 'Seymour One';
     font-size: 26px;
-    line-height: 1.26;
+    line-height: 1.27;
+    max-width: 247px;
   }
 
   &__button--list {
@@ -311,6 +312,7 @@ header {
   .hero__title {
     font-size: 18px;
     margin-top: 84px;
+    max-width: 180px;
   }
 
   .hero__button--list {
@@ -406,6 +408,7 @@ header {
   }
 
   .hero__title {
+    max-width: 370px;
     font-size: 38px;
     margin-top: 98px;
     @include font(38px, 48px);
