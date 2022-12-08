@@ -1,15 +1,8 @@
 import './js/gallery.js';
-import './js/customer-reviews.js';
+import './js/customer-reviews';
 import './js/burger';
 import './js/scroll-btn';
-import './js/franchise-modal';
-import './js/location-modal';
-import './js/about-modal';
-import './js/product-modal';
-import './js/product-modal-two';
-import './js/product-modal-three';
+import './js/modals';
 import './js/fancybox';
 import './js/hidden-panel';
-import './js/buy-now-modal';
-import './js/by-now-mobile-menu';
 import './js/scroll-smooth';

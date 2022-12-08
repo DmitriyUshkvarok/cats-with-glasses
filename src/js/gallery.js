@@ -1,4 +1,4 @@
-var swiper = new Swiper('.gallery-swip', {
+const swiper = new Swiper('.gallery-swip', {
   effect: 'fade',
   grabCursor: true,
   autoplay: {

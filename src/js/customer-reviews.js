@@ -1,4 +1,4 @@
-var swiper = new Swiper('.mySwiper', {
+const swiper = new Swiper('.mySwiper-review', {
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 40,
