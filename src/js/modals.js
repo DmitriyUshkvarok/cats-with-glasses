@@ -108,62 +108,62 @@ window.addEventListener('keydown', onEscKeyPressOne);
 function onEscKeyPressOne(event) {
   if (event.code === 'Escape') {
     refs.oneModal.classList.add('is-hidden');
+    document.body.classList.remove('modal-open');
   }
-  document.body.classList.remove('modal-open');
 }
 
 window.addEventListener('keydown', onEscKeyPressTwo);
 function onEscKeyPressTwo(event) {
   if (event.code === 'Escape') {
     refs.twoModal.classList.add('is-hidden');
+    document.body.classList.remove('modal-open');
   }
-  document.body.classList.remove('modal-open');
 }
 
 window.addEventListener('keydown', onEscKeyPressThree);
 function onEscKeyPressThree(event) {
   if (event.code === 'Escape') {
     refs.threeModal.classList.add('is-hidden');
+    document.body.classList.remove('modal-open');
   }
-  document.body.classList.remove('modal-open');
 }
 
 window.addEventListener('keydown', onEscKeyPressFour);
 function onEscKeyPressFour(event) {
   if (event.code === 'Escape') {
     refs.fourModal.classList.add('is-hidden');
+    document.body.classList.remove('modal-open');
   }
-  document.body.classList.remove('modal-open');
 }
 
 window.addEventListener('keydown', onEscKeyPressFive);
 function onEscKeyPressFive(event) {
   if (event.code === 'Escape') {
     refs.fiveModal.classList.add('is-hidden');
+    document.body.classList.remove('modal-open');
   }
-  document.body.classList.remove('modal-open');
 }
 
 window.addEventListener('keydown', onEscKeyPressSix);
 function onEscKeyPressSix(event) {
   if (event.code === 'Escape') {
     refs.mobileModal.classList.add('is-hidden');
+    document.body.classList.remove('modal-open');
   }
-  document.body.classList.remove('modal-open');
 }
 
 window.addEventListener('keydown', onEscKeyPressSeven);
 function onEscKeyPressSeven(event) {
   if (event.code === 'Escape') {
     refs.sixModal.classList.add('is-hidden');
+    document.body.classList.remove('modal-open');
   }
-  document.body.classList.remove('modal-open');
 }
 
 window.addEventListener('keydown', onEscKeyPressEight);
 function onEscKeyPressEight(event) {
   if (event.code === 'Escape') {
     refs.sevenModal.classList.add('is-hidden');
+    document.body.classList.remove('modal-open');
   }
-  document.body.classList.remove('modal-open');
 }

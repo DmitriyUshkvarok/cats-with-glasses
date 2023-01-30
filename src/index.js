@@ -6,3 +6,4 @@ import './js/modals';
 import './js/fancybox';
 import './js/hidden-panel';
 import './js/scroll-smooth';
+import './js/vimeo-player';
